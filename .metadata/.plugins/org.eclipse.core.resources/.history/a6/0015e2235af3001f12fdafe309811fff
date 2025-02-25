@@ -1,0 +1,19 @@
+package com.onlinebookshop.shop.repository;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.onlinebookshop.shop.model.Author;
+
+public class AuthorRepository {
+	private final JdbcTemplate jdbcTemplate;
+
+	public AuthorRepository(JdbcTemplate jdbcTemplate) {
+		super();
+		this.jdbcTemplate = jdbcTemplate;
+	} 
+	
+	// RowMapper for author
+	private RowMapper<Author> authorRowMapper = (rs, rowNum) ->
+		new Author(rs.getInt("id"), rs.getString("name"), rs.getString("country"));
+}

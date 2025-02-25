@@ -1,0 +1,14 @@
+package javaFeatures;
+
+public class productApp {
+
+	public static void main(String[] args) {
+		List<product> products = List.of(
+								 new product("milk", "grocery",90.0),
+								 new product("honey", "grocery",100.0),
+								 new product("bread", "grocery",680.0)
+								 );
+
+	}
+
+}

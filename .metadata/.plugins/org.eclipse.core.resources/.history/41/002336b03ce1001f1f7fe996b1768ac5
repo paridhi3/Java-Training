@@ -1,0 +1,45 @@
+package oops;
+
+import java.util.Scanner;
+
+public class BankApp {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		SavingsBankAccClass sAcc = new SavingsBankAccClass(accNum, name, bal, intRate);
+		
+		System.out.println("Enter acc num: ");
+		int accNum = sc.nextInt();
+		
+		System.out.println("Enter name: ");
+		String name = sc.next();
+		
+		System.out.println("Enter acc balance: ");
+		double bal = sc.nextDouble();
+		
+		System.out.println("Enter interest rate: ");
+		double intRate = sc.nextDouble();
+		System.out.println("Balance after interest: "+sAcc.balanceAfterInterest());
+		
+		System.out.println("Enter amount to be deposited: ");
+		double deposit = sc.nextDouble();
+		sAcc
+		
+				
+		
+//		sAcc.displayDetails();
+		
+				
+		BankAccountClass acc = new BankAccountClass(accNum, name, bal);
+		acc.getBalance();
+		acc.deposit(9000);
+		acc.withdraw(9000);
+		acc.getBalance();
+		acc.displayDetails();
+		
+//		BankAccountClass acc2 = new BankAccountClass();	
+//		acc2.setAccountNumber(2378);
+//		acc2.setAccountHolderName("Paridhi");
+//		acc2.setBalance(9000);
+//		acc2.displayDetails();
+	}
+}

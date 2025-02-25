@@ -1,0 +1,34 @@
+package EmpMgmt;
+
+abstract class Employee implements Person{
+	protected String empName;
+	protected int empID;
+	protected String dept;
+	protected double baseSalary;
+	protected int leaveBalance;
+	
+	public Employee(String empName, int empID, String dept, double baseSalary, int leaveBalance) {
+		super();
+		this.empName = empName;
+		this.empID =empID;
+		this.dept=dept;
+		this.baseSalary=baseSalary;
+		this.leaveBalance=leaveBalance;
+	}
+	
+	abstract double calSalary();
+	abstract String empType();
+	abstract void provideBenefits();
+	
+	public boolean requestLeaves(int days) {
+		if(days<=leaveBalance) {
+			leaveBalance -= days;
+			System.out.println("Leaves approved for "+days+" days");
+			return true;
+		}
+		else {
+			System.out.println("Leave not granted");
+			return false;
+		}
+	}
+}

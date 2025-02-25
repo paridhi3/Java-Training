@@ -1,0 +1,22 @@
+package Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class OrderService2Test {
+	
+	private OrderService2 os2;
+	
+	@BeforeEach
+	public void setup() {
+		os2 = new OrderService2();
+	}
+
+	@Test
+	public void testCalPrice_ValidInputs(double price, int quantity) {
+		
+	}
+
+}

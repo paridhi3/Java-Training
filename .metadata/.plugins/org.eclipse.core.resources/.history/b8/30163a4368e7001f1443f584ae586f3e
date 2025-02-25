@@ -1,0 +1,30 @@
+package javaFeatures;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BiFunction;
+
+public class constructurRef {
+
+	public static void main(String[] args) {
+		Map<String, Integer> employees = new HashMap<>();
+		employees.put("name1", 1);
+		employees.put("name2", 2);
+		employees.put("name3", 3);
+		
+		//lambda
+		employees.keySet().forEach(name -> new Employee(name));
+		
+		System.out.println("--------------------------------------");
+		
+		//constructor ref
+		employees.keySet().forEach(Employee :: new);
+		
+		// bifunction, supplier, fn
+		//BiFunction<T,U,R> -> T and U return result of type R
+		BiFunction<String, Integer, Employee> employee = (name, id) -> new Employee(name, id);
+		employee.apply("name1", 123);
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package javaFeatures;
+
+public class lambaExp {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

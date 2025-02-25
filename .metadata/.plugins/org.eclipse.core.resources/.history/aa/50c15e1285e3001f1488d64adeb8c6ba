@@ -1,0 +1,11 @@
+package EmpMgmt;
+
+public class PayrollManager {
+	public static void generatePayroll(Employee emp) {
+		double salary = emp.calSalary();
+		double tax = (emp instanceOf Taxable) ? (emp.calTax())
+				
+		// instanceOf ->
+				// if fte,pte: tax yes, else no
+	}
+}

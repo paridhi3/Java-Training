@@ -1,0 +1,24 @@
+package com.ems.EMS.model;
+
+import java.util.List;
+
+public class Performance {
+
+	private int empID;
+	private double rating;
+	private String feedback;
+	private List<String> projectsHandled;
+	private boolean isEligibleForPromotion;
+	
+	public Performance(int empID, double rating, String feedback, List<String> projectsHandled,
+			boolean isEligibleForPromotion) {
+		super();
+		this.empID = empID;
+		this.rating = rating;
+		this.feedback = feedback;
+		this.projectsHandled = projectsHandled;
+		this.isEligibleForPromotion = isEligibleForPromotion;
+	}
+	
+	
+}

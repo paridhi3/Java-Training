@@ -1,0 +1,42 @@
+package MovieTicketBooking;
+
+public class ResultSetMetaDataApp {
+    public static void main(String[] args) {
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = DatabaseConnection.getConnection();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery("SELECT * FROM bookings");
+
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int columnCount = rsmd.getColumnCount();
+
+            System.out.println("Number of columns: " + columnCount);
+
+            for (int i = 1; i <= columnCount; i++) {
+                String columnName = rsmd.getColumnName(i);
+                String columnType = rsmd.getColumnTypeName(i);
+                int columnDisplaySize = rsmd.getColumnDisplaySize(i);
+
+                System.out.println("Column " + i + ":");
+                System.out.println("  Name: " + columnName);
+                System.out.println("  Type: " + columnType);
+                System.out.println("  Display Size: " + columnDisplaySize);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (stmt != null) stmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+

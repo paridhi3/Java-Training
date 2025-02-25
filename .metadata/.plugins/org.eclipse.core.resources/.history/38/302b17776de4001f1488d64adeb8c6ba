@@ -1,0 +1,13 @@
+package collections;
+
+import java.util.Comparator;
+
+public class comparingCategoryproduct implements Comparator<product>{
+
+	@Override
+	public int compare(product p1, product p2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

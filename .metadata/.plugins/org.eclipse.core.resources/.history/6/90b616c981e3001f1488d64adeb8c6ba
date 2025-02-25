@@ -1,0 +1,6 @@
+package EmpMgmt;
+
+public class PTE extends Employee implements WorkHours{
+	//no taxable interface used, only work hours interface -> constant(not applicable here), getworkhours(define this differently)
+	//hourly rate, no. of hours
+}

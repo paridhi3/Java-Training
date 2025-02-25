@@ -1,0 +1,53 @@
+package EmpMgmt;
+
+public class FTE extends Employee implements Taxable, WorkHours{
+	
+	private double bonus;
+	
+	public FTE(String empName, int empID, String dept, double baseSalary, int leaveBalance, double bonus) {
+		super(empName, empID, dept, baseSalary, leaveBalance);
+		this.bonus = bonus;
+	}
+
+	@Override
+	public String getName() {
+		return empName;
+	}
+
+	@Override
+	public int getID() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getWorkHours() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double calTax(double salary) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double calSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	String getEmpType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	void provideBenefits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

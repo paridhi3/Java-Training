@@ -1,0 +1,13 @@
+spring.application.name=EMS
+
+# Address Config
+address.street = 123 Main St.
+address.city = London
+address.state = UK
+address.zipCode = 324657
+
+# Dept Config
+department.id = 101
+department.name = IT
+
+# Employee Config

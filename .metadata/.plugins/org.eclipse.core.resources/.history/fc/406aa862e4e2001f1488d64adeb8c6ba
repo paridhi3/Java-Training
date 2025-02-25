@@ -1,0 +1,12 @@
+package oops;
+
+public interface EmployeeInterface {
+	private String empName;
+	private int empID;
+	private String empDept;
+	private double salary;
+	private double bonus;
+	
+	public void displayEmpDetails();
+	public double calSalary();
+}

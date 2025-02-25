@@ -1,0 +1,20 @@
+package MovieTicketBooking;
+
+public class Menu {
+	
+	
+	
+	public static void adminMenu() {
+		
+	}
+	
+	
+	
+	public static void userMenu() {
+			
+	}
+	
+	
+	
+	
+}

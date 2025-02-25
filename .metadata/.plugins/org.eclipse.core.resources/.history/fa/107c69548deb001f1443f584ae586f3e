@@ -1,0 +1,38 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class DatabaseMetaDataApp {
+    public static void main(String[] args) {
+        
+        try {
+        	Connection conn = DatabaseConnection.getConnection();
+        	
+            DatabaseMetaData dbm = conn.getMetaData();
+
+            System.out.println("Database Product Name: " + dbm.getDatabaseProductName());
+            System.out.println("Database Product Version: " + dbm.getDatabaseProductVersion());
+            System.out.println("Database Driver Name: " + dbm.getDriverName());
+            System.out.println("Database Driver Version: " + dbm.getDriverVersion());
+            System.out.println("--------------------------------------------------------------");
+            
+            // Retrieve and print information about rs in the database
+            String[] types = { "TABLE" };
+            
+            ResultSet rs = dbm.getTables(null, null, "%", types);
+            
+            while (rs.next()) {
+                String tableName = rs.getString("TABLE_NAME");
+                String type = rs.getString("TABLE_TYPE");
+                System.out.println("Table Name: " + tableName + ", Type: " + tableType);
+            }
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+

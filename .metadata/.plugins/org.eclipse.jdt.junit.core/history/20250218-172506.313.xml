@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderServiceTest" project="Testing" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Junit.OrderServiceTest" time="0.037" displayname="OrderServiceTest" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderServiceTest]">
+    <testcase name="testPlaceOrderInsufficientStock" classname="Junit.OrderServiceTest" time="0.035" displayname="testPlaceOrderInsufficientStock()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderServiceTest]/[method:testPlaceOrderInsufficientStock()]"/>
+    <testcase name="testCalPrice" classname="Junit.OrderServiceTest" time="0.001" displayname="testCalPrice()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderServiceTest]/[method:testCalPrice()]"/>
+  </testsuite>
+</testrun>

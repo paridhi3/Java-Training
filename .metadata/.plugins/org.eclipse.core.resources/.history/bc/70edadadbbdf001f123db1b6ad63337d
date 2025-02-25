@@ -1,0 +1,35 @@
+package oops;
+
+import java.util.Scanner;
+
+//import java.util.ArrayList;
+
+public class BookManagement {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter book ID: ");
+		int id = sc.nextInt();
+		
+		System.out.println("Enter book title: ");
+		String title = sc.nextLine();
+		
+		System.out.println("Enter acc balance: ");
+		double bal = sc.nextDouble();
+				
+		BankAccountClass acc = new BankAccountClass(accNum, name, bal);
+		BankAccountClass acc2 = new BankAccountClass();	
+		
+//		acc.deposit(9000);
+//		acc.withdraw(9000);
+//		acc.getBalance();
+		
+		acc2.setAccountNumber(2378);
+		acc2.setAccountHolderName("Paridhi");
+		acc2.setBalance(9000);
+		
+		acc.displayDetails();
+		acc2.displayDetails();
+	}
+}
+

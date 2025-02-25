@@ -1,0 +1,41 @@
+package EmpMgmt;
+
+public class intern extends Employee implements WorkHours{
+	
+
+	public intern(String empName, int empID, String dept, double baseSalary, int leaveBalance) {
+		super(empName, empID, dept, baseSalary, leaveBalance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getID() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double calSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	String getEmpType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	void provideBenefits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

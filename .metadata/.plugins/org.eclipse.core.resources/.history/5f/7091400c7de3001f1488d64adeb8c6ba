@@ -1,0 +1,13 @@
+package EmpMgmt;
+
+abstract class Employee implements Person{
+	protected String empName;
+	protected int empID;
+	protected String dept;
+	protected double baseSalary;
+	protected int leaveBalance;
+	
+	public Employee(String empName, int empID, String dept, double baseSalary, int leaveBalance) {
+		
+	}
+}

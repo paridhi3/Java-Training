@@ -1,0 +1,21 @@
+package Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void testAdd() {
+		Calculator calc = new Calculator();
+		calc.add(5, 10)
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSubtract() {
+		fail("Not yet implemented");
+	}
+
+}

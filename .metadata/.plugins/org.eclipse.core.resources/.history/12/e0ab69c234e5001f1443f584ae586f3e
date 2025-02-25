@@ -1,0 +1,29 @@
+package multiThreading;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class deserialApp {
+
+	public static void main(String[] args) {
+		
+		try {
+            // Input stream for reading data from a file
+            FileInputStream file = new FileInputStream("person.ser");
+            
+            // Object input stream for reading objects from the file
+            ObjectInputStream in = new ObjectInputStream(file);
+            
+            // Reading the object 'objP' from the file using ObjectInputStream's readObject() method
+            person objP = (person) in.readObject();
+            
+            // Closing streams after use (important for resource management)
+            in.close();
+            file.close();
+            
+        } catch(Exception e) {
+            e.printStackTrace();  // Handling any exceptions that occur during deserialization process
+        }
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ems.EMS.model;
+
+public class Department {
+
+	private int deptID;
+	private String deptName;
+	
+}

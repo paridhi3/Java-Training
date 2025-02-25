@@ -1,0 +1,106 @@
+package test;
+
+import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+import EmpMgmt.MaxEmployeesReachedException;
+import EmpMgmt.NoLeaveBalance;
+
+public class CourseManagementSystem {
+	
+    private LinkedList<course> courses;
+    
+    public static void main(String[] args) throws Exception {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("What do you want to do?");		
+		System.out.println("Press 1: Add Courses");
+		System.out.println("Press 2: Sort courses by fee");
+		System.out.println("Press 3: Filter courses with duration > 4 weeks");    
+		System.out.println("Press 4: Display all courses");
+		
+		int choice = sc.nextInt();
+			switch(choice) {
+			case 1:
+				addCourse(sc);
+				break;
+			case 2:
+				displayAllEmployees();
+				break;
+			case 3:
+				applyLeave(sc);
+				break;
+			case 4:
+				System.out.println("Thank you");
+				sc.close();
+				return;
+			default:
+				System.out.println("Invalid choice");
+			}
+	}
+        }
+    	
+
+    public static void addCourse(Scanner sc) {
+        try {                
+        		System.out.println("Enter number of courses: ");
+                int n = sc.nextInt();
+                
+                for(int i=0; i<n; i++) {
+                	System.out.println("Enter course ID: ");
+                    int id = sc.nextInt();
+
+                    System.out.println("Enter course name: ");
+                    String name = sc.next();
+
+                    System.out.println("Enter instructor name: ");
+                    String instructor = sc.next();
+
+                    System.out.println("Enter duration in weeks (>0):");
+                    int duration = sc.nextInt ();
+                    if(duration<=0) {
+                    	throw new Exception ("duration must Be Greater Than Zero.");
+                    }
+                    
+                    System.out.println("Enter Fee(>0):");
+                    Double fee = sc.nextDouble ();
+                    if(fee<=0) {
+                    	throw new Exception ("Fee must Be Greater Than Zero.");
+                    }
+
+                    System.out.println("Enter Type: Technical/Non-Technical: ");
+                    String type = sc.next();
+                    
+                    if(type.equalsIgnoreCase("Technical")) {
+                    	course cr = new TechnicalCourse(id, name, instructor, duration, fee);
+                    	courses.add(cr);
+                    } else if (type.equalsIgnoreCase("Non-Technical")) {
+                        course cr = new NonTechnicalCourse(id, name, instructor, duration, fee);
+                        courses.add(cr);
+                    } else {
+                        throw new IllegalArgumentException("Invalid course type.");
+                    }
+                    
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void sortCoursesByFee() {
+        courses.sort(Comparator.comparingDouble(course::getFee));
+    }
+
+   public List<course> filterCoursesByDuration() { 
+       return courses.stream()
+                     .filter(course -> course.getDurationWeeks()>4)
+                     .collect(Collectors.toList());  
+   } 
+
+     public List<course> getAllCourses(){
+         return new LinkedList<>(courses);  
+     } 
+}
+

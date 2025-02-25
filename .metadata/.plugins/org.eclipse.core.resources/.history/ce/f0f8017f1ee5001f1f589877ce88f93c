@@ -1,0 +1,10 @@
+package multiThreading;
+
+public class threadApp {
+
+	public static void main(String[] args) {
+		testThread2 t1 = new testThread2();
+		testThread t2 = new testThread();
+	}
+
+}

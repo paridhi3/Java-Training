@@ -1,0 +1,18 @@
+package com.ems.EMS.service;
+
+@Service
+public class PerformanceService {
+	@Autowired
+	private Performance performance;
+	public List<String> displayProjectList() {
+		return performance.getProjectsHandled();
+	}
+	public boolean IsEligibleForProject() {
+		if(performance.getRating() > 3.5) {
+			return true;
+		}
+		return false;
+	}
+
+ 
+}

@@ -1,0 +1,14 @@
+package collections;
+
+public class product {
+	private int prodID;
+	private String prodName;
+	private double prodPrice;
+	
+	public product(int prodID, String prodName, double prodPrice) {
+		super();
+		this.prodID = prodID;
+		this.prodName = prodName;
+		this.prodPrice = prodPrice;
+	}
+}

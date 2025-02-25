@@ -1,0 +1,11 @@
+package multiThreading;
+
+public class testThread implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

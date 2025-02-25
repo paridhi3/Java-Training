@@ -1,0 +1,7 @@
+package Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OrderService2TestThread {
+
+}

@@ -1,0 +1,106 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+public class InsertData {
+	
+	public static void insertMovies() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter movie title: ");
+        String title = sc.next();
+		System.out.println("Enter movie genre:");
+		String genre = sc.next();
+		System.out.println("Enter movie duration: ");
+		int duration = sc.nextInt();
+		
+		String insertMoviesSQL = "INSERT INTO movies (title, genre, duration) values (?,?,?)";
+		
+		try (PreparedStatement psmt = conn.prepareStatement(insertMoviesSQL)) {
+			
+			psmt.setString(1, title);
+			psmt.setString(2, genre);
+			psmt.setInt(3, duration);
+			psmt.executeUpdate();
+			
+			System.out.println("Movies inserted successfully");
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}		
+	}
+	
+	
+	public static void insertShows() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter movie title: ");
+        String title = sc.next();
+		System.out.println("Enter movie genre:");
+		String genre = sc.next();
+		System.out.println("Enter movie duration: ");
+		int duration = sc.nextInt();
+		
+		String insertShowsSQL = "INSERT INTO shows (movie_id, show_time, available_seats) values (?,?,?)";
+		
+		try (PreparedStatement psmt = conn.prepareStatement(insertShowsSQL)) {
+			psmt.setInt(1, 1);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,16, 9,30)));
+			psmt.setInt(3, 78);
+			psmt.executeUpdate();
+			
+			psmt.setInt(1, 1);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,17, 11,00)));
+			psmt.setInt(3, 53);
+			psmt.executeUpdate();
+			
+			psmt.setInt(1, 2);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,16, 2,30)));
+			psmt.setInt(3, 74);
+			psmt.executeUpdate();
+			
+			psmt.setInt(1, 2);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,16, 1,30)));
+			psmt.setInt(3, 65);
+			psmt.executeUpdate();
+			
+			psmt.setInt(1, 3);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,16, 5,30)));
+			psmt.setInt(3, 87);
+			psmt.executeUpdate();
+			
+			psmt.setInt(1, 3);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(2025,2,17, 3,30)));
+			psmt.setInt(3, 56);
+			psmt.executeUpdate();
+			
+			System.out.println("Shows inserted successfully");
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}		
+	}
+
+	public static void main(String[] args) {
+//		insertMovies();
+//		insertShows();
+	}
+
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderService2Test" project="Testing" tests="32" started="32" failures="0" errors="1" ignored="0">
+  <testsuite name="Junit.OrderService2Test" time="0.152" displayname="OrderService2Test" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]">
+    <testsuite name="testCalPriceParamCsv(Junit.OrderService2Test)" time="0.052" displayname="testCalPriceParamCsv(double, int, double)" parameters="double,int,double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testCalPriceParamCsv(double, int, double)]">
+      <testcase name="testCalPriceParamCsv" classname="Junit.OrderService2Test" time="0.052" dynamicTest="true" displayname="[1] 100.0, 2, 180.0" parameters="double,int,double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testCalPriceParamCsv(double, int, double)]/[test-template-invocation:#1]"/>
+      <testcase name="testCalPriceParamCsv" classname="Junit.OrderService2Test" time="0.002" dynamicTest="true" displayname="[2] 150.0, 3, 405.0" parameters="double,int,double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testCalPriceParamCsv(double, int, double)]/[test-template-invocation:#2]"/>
+      <testcase name="testCalPriceParamCsv" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] 200.0, 1, 180.0" parameters="double,int,double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testCalPriceParamCsv(double, int, double)]/[test-template-invocation:#3]"/>
+      <testcase name="testCalPriceParamCsv" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[4] 50.0, 4, 180.0" parameters="double,int,double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testCalPriceParamCsv(double, int, double)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testsuite name="testBoundary(Junit.OrderService2Test)" time="0.001" displayname="testBoundary(int)" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testBoundary(int)]">
+      <testcase name="testBoundary" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[1] 11" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testBoundary(int)]/[test-template-invocation:#1]"/>
+      <testcase name="testBoundary" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[2] 13" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testBoundary(int)]/[test-template-invocation:#2]"/>
+      <testcase name="testBoundary" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] 15" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testBoundary(int)]/[test-template-invocation:#3]"/>
+    </testsuite>
+    <testcase name="placeOrderBeyondStock" classname="Junit.OrderService2Test" time="0.004" displayname="placeOrderBeyondStock()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:placeOrderBeyondStock()]"/>
+    <testcase name="TestCalPrice_NegativePrice" classname="Junit.OrderService2Test" time="0.003" displayname="TestCalPrice_NegativePrice()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:TestCalPrice_NegativePrice()]"/>
+    <testsuite name="testInvalidDiscount(Junit.OrderService2Test)" time="0.003" displayname="testInvalidDiscount(double)" parameters="double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidDiscount(double)]">
+      <testcase name="testInvalidDiscount" classname="Junit.OrderService2Test" time="0.003" dynamicTest="true" displayname="[1] -0.5" parameters="double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidDiscount(double)]/[test-template-invocation:#1]"/>
+      <testcase name="testInvalidDiscount" classname="Junit.OrderService2Test" time="0.0" dynamicTest="true" displayname="[2] 1.5" parameters="double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidDiscount(double)]/[test-template-invocation:#2]"/>
+      <testcase name="testInvalidDiscount" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] 2.0" parameters="double" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidDiscount(double)]/[test-template-invocation:#3]"/>
+    </testsuite>
+    <testcase name="testCalPrice_InvalidInputs" classname="Junit.OrderService2Test" time="0.001" displayname="testCalPrice_InvalidInputs()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs()]"/>
+    <testcase name="setDiscountInvalid" classname="Junit.OrderService2Test" time="0.002" displayname="setDiscountInvalid()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:setDiscountInvalid()]"/>
+    <testcase name="testCalPrice_ValidInputs" classname="Junit.OrderService2Test" time="0.0" displayname="testCalPrice_ValidInputs()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_ValidInputs()]"/>
+    <testsuite name="testValidStockValues(Junit.OrderService2Test)" incomplete="true" displayname="testValidStockValues(int)" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testValidStockValues(int)]">
+      <error>org.junit.platform.commons.JUnitException: Could not find method [testValidStockValues] in class [Junit.OrderService2Test]&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.lambda$getRequiredMethod$26(ReflectionUtils.java:1385)&#13;
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.getRequiredMethod(ReflectionUtils.java:1384)&#13;
+	at org.junit.jupiter.params.provider.MethodArgumentsProvider.getMethod(MethodArgumentsProvider.java:61)&#13;
+	at org.junit.jupiter.params.provider.MethodArgumentsProvider.lambda$provideArguments$0(MethodArgumentsProvider.java:45)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:107)&#13;
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:42)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+	Suppressed: org.junit.platform.commons.PreconditionViolationException: Configuration error: You must configure at least one set of arguments for this @ParameterizedTest&#13;
+		at org.junit.platform.commons.util.Preconditions.condition(Preconditions.java:281)&#13;
+		at org.junit.jupiter.params.ParameterizedTestExtension.lambda$provideTestTemplateInvocationContexts$5(ParameterizedTestExtension.java:98)&#13;
+		at java.base/java.util.stream.AbstractPipeline.close(AbstractPipeline.java:323)&#13;
+		at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:273)&#13;
+		... 55 more&#13;
+&#13;
+</error>
+    </testsuite>
+    <testcase name="setStockNegative" classname="Junit.OrderService2Test" time="0.001" displayname="setStockNegative()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:setStockNegative()]"/>
+    <testsuite name="testNegPriceNegQuant(Junit.OrderService2Test)" time="0.001" displayname="testNegPriceNegQuant(double, int)" parameters="double,int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testNegPriceNegQuant(double, int)]">
+      <testcase name="testNegPriceNegQuant" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[1] -100.0, 5" parameters="double,int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testNegPriceNegQuant(double, int)]/[test-template-invocation:#1]"/>
+      <testcase name="testNegPriceNegQuant" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[2] -100.0, -5" parameters="double,int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testNegPriceNegQuant(double, int)]/[test-template-invocation:#2]"/>
+      <testcase name="testNegPriceNegQuant" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] -50, -2" parameters="double,int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testNegPriceNegQuant(double, int)]/[test-template-invocation:#3]"/>
+      <testcase name="testNegPriceNegQuant" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[4] 100.0, -5" parameters="double,int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testNegPriceNegQuant(double, int)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testcase name="testCalPrice_InvalidInputs2" classname="Junit.OrderService2Test" time="0.0" displayname="testCalPrice_InvalidInputs2()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs2()]"/>
+    <testcase name="testCalPrice_InvalidInputs5" classname="Junit.OrderService2Test" time="0.0" displayname="testCalPrice_InvalidInputs5()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs5()]"/>
+    <testcase name="testCalPrice_InvalidInputs6" classname="Junit.OrderService2Test" time="0.0" displayname="testCalPrice_InvalidInputs6()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs6()]"/>
+    <testcase name="TestCalQuant_NegativePrice" classname="Junit.OrderService2Test" time="0.001" displayname="TestCalQuant_NegativePrice()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:TestCalQuant_NegativePrice()]"/>
+    <testsuite name="testInvalidStock(Junit.OrderService2Test)" time="0.001" displayname="testInvalidStock(int)" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidStock(int)]">
+      <testcase name="testInvalidStock" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[1] -5" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidStock(int)]/[test-template-invocation:#1]"/>
+      <testcase name="testInvalidStock" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[2] -10" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidStock(int)]/[test-template-invocation:#2]"/>
+      <testcase name="testInvalidStock" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] -15" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testInvalidStock(int)]/[test-template-invocation:#3]"/>
+    </testsuite>
+    <testsuite name="testDiffQuant(Junit.OrderService2Test)" time="0.0" displayname="testDiffQuant(int)" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testDiffQuant(int)]">
+      <testcase name="testDiffQuant" classname="Junit.OrderService2Test" time="0.0" dynamicTest="true" displayname="[1] 1" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testDiffQuant(int)]/[test-template-invocation:#1]"/>
+      <testcase name="testDiffQuant" classname="Junit.OrderService2Test" time="0.0" dynamicTest="true" displayname="[2] 4" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testDiffQuant(int)]/[test-template-invocation:#2]"/>
+      <testcase name="testDiffQuant" classname="Junit.OrderService2Test" time="0.001" dynamicTest="true" displayname="[3] 7" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testDiffQuant(int)]/[test-template-invocation:#3]"/>
+      <testcase name="testDiffQuant" classname="Junit.OrderService2Test" time="0.0" dynamicTest="true" displayname="[4] 10" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[test-template:testDiffQuant(int)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testcase name="testPlaceOrderSufficientStock" classname="Junit.OrderService2Test" time="0.002" displayname="testPlaceOrderSufficientStock()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testPlaceOrderSufficientStock()]"/>
+  </testsuite>
+</testrun>

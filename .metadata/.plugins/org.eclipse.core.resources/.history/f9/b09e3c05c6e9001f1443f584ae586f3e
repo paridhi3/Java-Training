@@ -1,0 +1,17 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+
+public class DatabaseConnection {
+	private static final String URL = "jdbc:mysql://localhost:3306/movie_booking";
+	private static final String USER = "root";
+	private static final String PASSWORD = "Genpact@123456789";
+	
+	private static Connection connection; // returns connection object
+	
+	public static Connection getConnection() {
+		if(connection == null) {
+			
+		}
+	}
+}

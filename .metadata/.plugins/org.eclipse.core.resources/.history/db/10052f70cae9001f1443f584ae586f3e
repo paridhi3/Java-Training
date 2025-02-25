@@ -1,0 +1,41 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DatabseTables {
+	
+	public static void createTables() {
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		try {
+			Statement smt = conn.createStatement();
+			String createMoviesTable = "Create Table if not exists Movies("
+										+"movie_id INT auto_increment primary key,"
+										+"title varchar(60) not null,"
+										+"genre varchar(20),"
+										+"duration int not null)";
+			smt.executeUpdate(createMoviesTable);
+			System.out.println("Movies table created");
+			
+			
+			
+			smt.close();
+			conn.close();
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

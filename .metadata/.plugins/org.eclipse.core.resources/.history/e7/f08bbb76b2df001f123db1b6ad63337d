@@ -1,0 +1,28 @@
+package oops;
+
+import java.util.Scanner;
+
+public class BankApp {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter acc num: ");
+		String accNum = sc.next();
+		
+		System.out.println("Enter name: ");
+		String name = sc.next();
+		
+		System.out.println("Enter acc balance: ");
+		double bal = sc.nextDouble();
+		
+		
+		BankAccountClass acc = new BankAccountClass(7898, "Paridhi", 20000);
+		BankAccountClass acc2 = new BankAccountClass();	
+		
+		acc.deposit(9000);
+		acc.withdraw(9000);
+		acc.getBalance();
+		
+		acc.displayDetails();
+	}
+}

@@ -1,0 +1,5 @@
+package multiThreading;
+
+public class testThread2 implements Thread{
+
+}

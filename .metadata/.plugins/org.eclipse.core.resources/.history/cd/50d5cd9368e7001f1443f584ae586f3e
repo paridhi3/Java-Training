@@ -1,0 +1,19 @@
+package javaFeatures;
+
+public class Employee {
+	private String name;
+	private String empID;
+	
+	public Employee(String name, Integer id) {
+		super();
+		this.name = name;
+		this.empID = id;
+		System.out.println("2 params const");
+	}
+	
+	public Employee(String name) {
+		super();
+		this.name = name;
+		System.out.println("Employee Created: "+name);
+	}
+}

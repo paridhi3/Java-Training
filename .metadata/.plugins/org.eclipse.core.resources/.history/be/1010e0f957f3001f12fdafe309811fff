@@ -1,0 +1,10 @@
+package com.onlinebookshop.shop.model;
+
+import java.sql.Date;
+
+public class Order {
+	private int id;
+	private int bookId;
+	private int quantity;
+	private Date date;
+}

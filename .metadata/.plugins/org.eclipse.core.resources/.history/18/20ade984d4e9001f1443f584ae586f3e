@@ -1,0 +1,79 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+
+public class InsertData {
+	
+	public static void insertMovies() {
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		String insertMoviesSQL = "INSERT INTO movies (title, genre, duration) values (?,?,?)";
+		
+		try (PreparedStatement psmt = conn.prepareStatement(insertMoviesSQL)) {
+			psmt.setString(1, "Fighter");
+			psmt.setString(2, "Action");
+			psmt.setInt(3, 150);
+			
+			psmt.setString(1, "Interstellar");
+			psmt.setString(2, "Sci-fi");
+			psmt.setInt(3, 120);
+			
+			psmt.setString(1, "Godzilla");
+			psmt.setString(2, "Action");
+			psmt.setInt(3, 90);
+			
+			psmt.executeUpdate();
+			
+			System.out.println("Movies inserted successfully");
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}		
+	}
+	
+	
+	public static void insertShows() {
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		String insertShowsSQL = "INSERT INTO shows (movie_id, show_time, available_seats) values (?,?,?)";
+		
+		try (PreparedStatement psmt = conn.prepareStatement(insertShowsSQL)) {
+			psmt.setInt(1, 1);
+			psmt.setTimestamp(2, Timestamp.valueOf(LocalDateTime.of(null, null)));
+			psmt.setInt(3, 150);
+			
+			psmt.setString(1, "Interstellar");
+			psmt.setString(2, "Sci-fi");
+			psmt.setInt(3, 120);
+			
+			psmt.setString(1, "Godzilla");
+			psmt.setString(2, "Action");
+			psmt.setInt(3, 90);
+			
+			psmt.executeUpdate();
+			
+			System.out.println("Movies inserted successfully");
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}		
+	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

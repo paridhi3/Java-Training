@@ -1,0 +1,24 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.sql.rowset.FilteredRowSet;
+import javax.sql.rowset.RowSetProvider;
+
+public class FilterApplication {
+
+	public static void main(String[] args) {
+		
+		try (Connection conn = DatabaseConnection.getConnection();
+			 Statement smt = conn.createStatement();
+			 ResultSet rs = smt.executeQuery("Select * from shows");
+			) {
+			
+			FilteredRowSet frs = RowSetProvider.newFactory().createFilteredRowSet();
+		}
+
+	}
+
+}

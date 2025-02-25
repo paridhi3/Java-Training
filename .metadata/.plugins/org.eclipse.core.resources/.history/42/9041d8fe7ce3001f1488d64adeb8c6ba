@@ -1,0 +1,14 @@
+package EmpMgmt;
+
+public interface Person {
+	public void displayEmpDetails();
+	public double calSalary();
+	
+	default void OrganizationPolicy() {
+		System.out.println("Organization policy");
+	}
+	
+	static void companyTagline() {
+		System.out.println("Company tagline");
+	}
+}

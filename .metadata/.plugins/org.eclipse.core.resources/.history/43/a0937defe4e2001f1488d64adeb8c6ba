@@ -1,0 +1,33 @@
+package oops;
+
+public class fteImp implements EmployeeInterface{
+	private String empName;
+	private int empID;
+	private String empDept;
+	private double salary;
+	private double bonus;
+	
+	public fteImp(String empName, int empID, String empDept, double salary, double bonus) {
+		super();
+		this.empName = empName;
+		this.empID = empID;
+		this.empDept = empDept;
+		this.salary=salary;
+		this.bonus=bonus;
+	}
+	
+	@Override
+	public void displayEmpDetails() {
+		System.out.println("Employee name: "+empName);
+		System.out.println("Employee ID: "+empID);
+		System.out.println("Employee dept: "+empDept);
+		System.out.println("Employee salary: "+salary);
+		System.out.println("Employee bonus: "+bonus);
+		
+	}
+	@Override
+	public double calSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

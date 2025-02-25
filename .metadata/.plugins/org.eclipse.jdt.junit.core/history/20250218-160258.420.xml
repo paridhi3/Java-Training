@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest" project="Testing" tests="13" started="13" failures="0" errors="0" ignored="0">
+  <testsuite name="Junit.CalculatorTest" time="0.151" displayname="CalculatorTest" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]">
+    <testcase name="testCondition2" classname="Junit.CalculatorTest" time="0.025" displayname="testCondition2()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testCondition2()]"/>
+    <testcase name="testAdd" classname="Junit.CalculatorTest" time="0.002" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testAdd()]"/>
+    <testcase name="testSubtract" classname="Junit.CalculatorTest" time="0.001" displayname="testSubtract()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testSubtract()]"/>
+    <testcase name="testNull2" classname="Junit.CalculatorTest" time="0.004" displayname="testNull2()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testNull2()]"/>
+    <testsuite name="testAddParam(Junit.CalculatorTest)" time="0.03" displayname="testAddParam(int)" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParam(int)]">
+      <testcase name="testAddParam" classname="Junit.CalculatorTest" time="0.03" dynamicTest="true" displayname="[1] 12" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParam(int)]/[test-template-invocation:#1]"/>
+      <testcase name="testAddParam" classname="Junit.CalculatorTest" time="0.001" dynamicTest="true" displayname="[2] 15" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParam(int)]/[test-template-invocation:#2]"/>
+      <testcase name="testAddParam" classname="Junit.CalculatorTest" time="0.001" dynamicTest="true" displayname="[3] 16" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParam(int)]/[test-template-invocation:#3]"/>
+      <testcase name="testAddParam" classname="Junit.CalculatorTest" time="0.001" dynamicTest="true" displayname="[4] 17" parameters="int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParam(int)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testsuite name="testAddParamCsv(Junit.CalculatorTest)" time="0.002" displayname="testAddParamCsv(int, int, int)" parameters="int,int,int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParamCsv(int, int, int)]">
+      <testcase name="testAddParamCsv" classname="Junit.CalculatorTest" time="0.002" dynamicTest="true" displayname="[1] 5, 7, 12" parameters="int,int,int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParamCsv(int, int, int)]/[test-template-invocation:#1]"/>
+      <testcase name="testAddParamCsv" classname="Junit.CalculatorTest" time="0.001" dynamicTest="true" displayname="[2] 3, 6, 9" parameters="int,int,int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParamCsv(int, int, int)]/[test-template-invocation:#2]"/>
+      <testcase name="testAddParamCsv" classname="Junit.CalculatorTest" time="0.0" dynamicTest="true" displayname="[3] 7, 5, 12" parameters="int,int,int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParamCsv(int, int, int)]/[test-template-invocation:#3]"/>
+      <testcase name="testAddParamCsv" classname="Junit.CalculatorTest" time="0.0" dynamicTest="true" displayname="[4] 8, 9, 17" parameters="int,int,int" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[test-template:testAddParamCsv(int, int, int)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testcase name="testCondition" classname="Junit.CalculatorTest" time="0.001" displayname="testCondition()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testCondition()]"/>
+  </testsuite>
+</testrun>

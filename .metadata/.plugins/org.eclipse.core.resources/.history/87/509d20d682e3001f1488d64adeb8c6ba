@@ -1,0 +1,42 @@
+package EmpMgmt;
+
+public class intern extends Employee implements WorkHours{
+	
+
+	public intern(String empName, int empID, String dept, double baseSalary, int leaveBalance) {
+		super(empName, empID, dept, baseSalary, leaveBalance);
+	}
+
+	@Override
+	public String getName() {
+		return empName;
+	}
+
+	@Override
+	public int getID() {
+		return empID;
+	}
+
+	@Override
+	double calSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	String getEmpType() {
+		return "Part Time Employee";
+	}
+
+	@Override
+	void provideBenefits() {
+		System.out.println("Health Insurance, PF");
+	}
+
+	@Override
+	public int getWorkHours() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

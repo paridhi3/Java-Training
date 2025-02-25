@@ -1,0 +1,15 @@
+package multiThreading;
+
+public class threadApp {
+
+	public static void main(String[] args) {
+		testThread2 t1 = new testThread2();
+		
+		testThread runnable = new testThread();
+		Thread t2 = new Thread(runnable);
+		
+		t1.start();
+		t2.s
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.ems.EMS.model;
+
+import java.util.List;
+
+public class Employee {
+
+	private int empID;
+	private String empName;
+	private String email;
+	private String phone;
+	private double salary;
+	private String designation;
+	private Address address;
+	private Department department;
+	private List<String> skills;
+	
+	public Employee(int empID, String empName, String email, String phone, double salary, String designation,
+			Address address, Department department, List<String> skills) {
+		super();
+		this.empID = empID;
+		this.empName = empName;
+		this.email = email;
+		this.phone = phone;
+		this.salary = salary;
+		this.designation = designation;
+		this.address = address;
+		this.department = department;
+		this.skills = skills;
+	}
+	
+	
+	
+}

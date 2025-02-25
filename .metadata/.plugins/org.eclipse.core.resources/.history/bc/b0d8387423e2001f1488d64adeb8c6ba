@@ -1,0 +1,16 @@
+package oops;
+
+public class PremiumBankAcc extends SavingsBankAccClass {
+	
+	public PremiumBankAcc() {}
+	
+	private double bonusInterest;
+
+	public double getBonusInterest() {
+		return bonusInterest;
+	}
+
+	public void setBonusInterest(double bonusInterest) {
+		this.bonusInterest = bonusInterest;
+	}
+}

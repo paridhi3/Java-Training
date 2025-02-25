@@ -1,0 +1,23 @@
+package oops;
+
+abstract class Employee {
+	private String empName;
+	private int empID;
+	private String empDept;
+	
+	public Employee(String empName, int empID, String empDept) {
+		super();
+		this.empName = empName;
+		this.empID = empID;
+		this.empDept = empDept;
+	}
+	
+	public void displayEmpDetails() {
+		System.out.println("Employee name: "+empName);
+		System.out.println("Employee ID: "+empID);
+		System.out.println("Employee dept: "+empDept);
+	}
+	
+	abstract double calSalary();
+	public abstract applyLeave(int days);
+}

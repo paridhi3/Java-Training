@@ -1,0 +1,5 @@
+package EmpMgmt;
+
+abstract class Employee implements Person{
+
+}

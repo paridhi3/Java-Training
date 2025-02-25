@@ -1,0 +1,78 @@
+package oops;
+
+public class SavingsBankAccClass extends BankAccountClass {
+	private double interestRate;
+	
+	public SavingsBankAccClass() {
+		super();
+	}
+	
+	public SavingsBankAccClass(int accountNumber, String accountHolderName, double initialBalance, double interestRate) {
+		super(accountNumber, accountHolderName, initialBalance);
+		this.setInterestRate(interestRate);
+	}
+
+	public double getInterestRate() {
+		return interestRate;
+	}
+
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	@Override
+	public void deposit(double amount) {
+        super.deposit(amount); 
+        double interest = amount*interestRate;
+        setBalance(getBalance()*interest);
+        System.out.println("Interest Added: "+interest);
+    }
+	
+	@Override
+	public void deposit(double... amounts) {
+		double bal = super.getBalance(); 
+		for(double amount:amounts) {
+        	if(amount>0) {
+        		totalDeposit += amount;
+        	}
+        	else {
+        		System.out.println("Invalid deposit amount.");
+                System.out.println();
+        	}
+        }
+        
+        bal = amount*interestRate;
+        super.deposit(amounts);
+
+        System.out.println("Updated Balance after adding interest: Rs " + bal);
+        System.out.println();
+    }
+	
+	@Override
+
+    public void deposit(double... amounts)
+
+    {
+
+    	balance += (balance*roi);
+
+    	super.deposit(balance);
+
+    	System.out.println("Updated Balance: "+balance);
+
+    }
+ 
+ 
+	
+	public void displayDetails(){
+	       super.displayDetails();
+	       System.out.println("Balance after interest: Rs "+balanceAfterInterest());
+	       System.out.println("------------------------------------------");
+	}
+	
+	public double balanceAfterInterest() {
+		double balance = super.getBalance();
+		balance += (balance * interestRate);
+		return balance;
+	}
+}

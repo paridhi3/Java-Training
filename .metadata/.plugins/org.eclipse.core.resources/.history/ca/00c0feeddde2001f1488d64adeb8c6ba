@@ -1,0 +1,31 @@
+package oops;
+
+public class intern extends Employee {
+	
+	private double stipend;
+	private double bonus;
+
+	public intern(String empName, int empID, String empDept, double stipend, double bonus) {		
+		super(empName, empID, empDept);
+		this.stipend=stipend;
+		this.bonus=bonus;
+	}
+
+	@Override
+	double calSalary() {
+		return stipend+bonus;
+	}
+	public double getStipend() {
+		return stipend;
+	}
+	public void setStipend(double stipend) {
+		this.stipend = stipend;
+	}
+	public double getBonus() {
+		return bonus;
+	}
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+}

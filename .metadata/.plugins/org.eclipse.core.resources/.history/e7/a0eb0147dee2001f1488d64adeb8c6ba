@@ -1,0 +1,25 @@
+package oops;
+
+public class partTimeEmployee extends Employee {
+
+	private double salary;
+ 
+	public partTimeEmployee(String empName, int empId, String empDept, double salary) {
+		super(empName, empId, empDept);
+		this.salary=salary;
+	}
+ 
+	public double getSalary() {
+		return salary;
+	}
+ 
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+ 
+	@Override
+	double calSalary() {
+		return salary;
+	}
+
+}

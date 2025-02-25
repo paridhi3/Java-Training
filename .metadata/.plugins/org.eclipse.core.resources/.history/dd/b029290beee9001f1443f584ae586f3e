@@ -1,0 +1,38 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class TicketBooking {
+	
+	public static void bookTicket() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Select the movie and show from below:");
+		ShowAvailableMovies.displayAll();
+		System.out.println("Enter show id: ");
+		int showID = sc.nextInt();
+		
+		String query1 = "select available_seats from shows where show_id=?";
+		
+		try (PreparedStatement psmt = conn.prepareStatement(query1)) {
+			psmt.setInt(1, showID);
+			psmt.executeQuery();
+			System.out.println("You select show with show_id=" +showID);
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}
+	
+	
+
