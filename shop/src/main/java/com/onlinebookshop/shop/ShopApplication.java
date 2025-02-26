@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.onlinebookshop.shop.config.ShopAppConfig;
 import com.onlinebookshop.shop.model.Author;
 import com.onlinebookshop.shop.model.Book;
 import com.onlinebookshop.shop.model.Order;
-import com.onlinebookshop.shop.model.ShopAppConfig;
 import com.onlinebookshop.shop.service.AuthorService;
 import com.onlinebookshop.shop.service.BookService;
 import com.onlinebookshop.shop.service.OrderService;
@@ -22,12 +22,26 @@ public class ShopApplication implements CommandLineRunner{
 	
 	@Autowired
 	private BookService bookService;
-//	
-//	@Autowired
-//	private AuthorService as;
-//	
-//	@Autowired
-//	private OrderService os;
+	@Autowired
+	private AuthorService as;
+	@Autowired
+	private OrderService os;
+	
+	@Autowired
+	private Book b1;
+	@Autowired
+	private Book b2;
+	
+	@Autowired
+	private Author a1;
+	@Autowired
+	private Author a2;
+	
+	@Autowired
+	private Order o1;
+	@Autowired
+	private Order o2;	
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(ShopApplication.class, args);
@@ -36,30 +50,18 @@ public class ShopApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		// TEST SERVICES
-		
-		ApplicationContext context = new AnnotationConfigApplicationContext(ShopAppConfig.class);
-		
-		Book book = context.getBean("book", Book.class);
-		System.out.println(book);
-		Author author = context.getBean("author", Author.class);
-		System.out.println(author);
-		Order order = context.getBean("order", Order.class);
-		System.out.println(order);
-		
+		// TEST SERVICES		
 		
 // -----------------------------------------------------------------------------------------------------------------
-////		// TESTING BOOK SERVICES
-////		
-////		Book b1 = new Book(1, "Physics", 300, 1);
-////		Book b2 = new Book(2, "Chemistry", 400, 1);
-////		
-////		// add books
-////		bookService.addBook(b1);
-////		bookService.addBook(b2);
+
+//		// TESTING BOOK SERVICES
 //		
-		System.out.println("Book service");
-		bookService = context.getBean(BookService.class);
+//		Book b1 = new Book(1, "Physics", 300, 1);
+//		Book b2 = new Book(2, "Chemistry", 400, 1);
+//		
+		// add books
+		bookService.addBook(b1);
+		bookService.addBook(b2);
 		
 		// get all books
 		List<Book> books = bookService.getAllBooks();
@@ -86,69 +88,69 @@ public class ShopApplication implements CommandLineRunner{
 		
 //// -------------------------------------------------------------------------------------------------------------------
 //		
-//		// TESTING AUTHOR SERVICES
-//		
-////		Author a1 = new Author("H. C. Verma", "India");
-////		Author a2 = new Author("S. N. Tandon", "India");
-////				
-////		// add authors
-////		as.addAuthor(a1);
-////		as.addAuthor(a2);
-//				
-//		// get all authors
-//		List<Author> authors = as.getAllAuthors();
-//		System.out.println("Authors list");
-//		authors.forEach(author -> System.out.println(author));
-//				
-//		// get author by id
-//		int author_id=1;
-//		Author foundAuthor = as.getAuthorById(author_id);
-//		System.out.println(foundAuthor);
-//				
-//		// update author details
-//		foundAuthor.setCountry("London");
-//		as.updateAuthorDetails(foundAuthor);
-//		System.out.println("New country for author with id "+foundAuthor.getId()+" is "+foundAuthor.getCountry());
-//				
-//		// delete author
-//		int AuthorID=3;
-//		as.deleteAuthor(AuthorID);
-//				
-//		// fetch updated author list
-//		as.getAllAuthors().forEach(author -> System.out.println(author));
-//		
+		// TESTING AUTHOR SERVICES
+		
+//		Author a1 = new Author("H. C. Verma", "India");
+//		Author a2 = new Author("S. N. Tandon", "India");
+				
+		// add authors
+		as.addAuthor(a1);
+		as.addAuthor(a2);
+				
+		// get all authors
+		List<Author> authors = as.getAllAuthors();
+		System.out.println("Authors list");
+		authors.forEach(author -> System.out.println(author));
+				
+		// get author by id
+		int author_id=1;
+		Author foundAuthor = as.getAuthorById(author_id);
+		System.out.println(foundAuthor);
+				
+		// update author details
+		foundAuthor.setCountry("London");
+		as.updateAuthorDetails(foundAuthor);
+		System.out.println("New country for author with id "+foundAuthor.getId()+" is "+foundAuthor.getCountry());
+				
+		// delete author
+		int AuthorID=3;
+		as.deleteAuthor(AuthorID);
+				
+		// fetch updated author list
+		as.getAllAuthors().forEach(author -> System.out.println(author));
+		
 //// -------------------------------------------------------------------------------------------------------------------
 //		
-//		// TESTING ORDER SERVICES
-//				
-////		Order o1 = new Order(1, 2);
-////		Order o2 = new Order(2, 3);
-////						
-////		// add orders
-////		os.addOrder(o1);
-////		os.addOrder(o2);
-//						
-//		// get all orders
-//		List<Order> orders = os.getAllOrders();
-//		System.out.println("Orders list");
-//		orders.forEach(order -> System.out.println(order));
-//						
-//		// get order by id
-//		int order_id=1;
-//		Order foundOrder = os.getOrderById(order_id);
-//		System.out.println(foundOrder);
-//						
-//		// update order details
-//		foundOrder.setQuantity(5);
-//		os.updateOrderDetails(foundOrder);
-//		System.out.println("New quantity for order with id "+foundOrder.getId()+" is "+foundOrder.getQuantity());
-//						
-//		// delete order
-//		int OrderID=3;
-//		os.deleteOrder(OrderID);
-//						
-//		// fetch updated order list
-//		os.getAllOrders().forEach(order -> System.out.println(order));
+		// TESTING ORDER SERVICES
+				
+//		Order o1 = new Order(1, 2);
+//		Order o2 = new Order(2, 3);
+						
+		// add orders
+		os.addOrder(o1);
+		os.addOrder(o2);
+						
+		// get all orders
+		List<Order> orders = os.getAllOrders();
+		System.out.println("Orders list");
+		orders.forEach(order -> System.out.println(order));
+						
+		// get order by id
+		int order_id=1;
+		Order foundOrder = os.getOrderById(order_id);
+		System.out.println(foundOrder);
+						
+		// update order details
+		foundOrder.setQuantity(5);
+		os.updateOrderDetails(foundOrder);
+		System.out.println("New quantity for order with id "+foundOrder.getId()+" is "+foundOrder.getQuantity());
+						
+		// delete order
+		int OrderID=3;
+		os.deleteOrder(OrderID);
+						
+		// fetch updated order list
+		os.getAllOrders().forEach(order -> System.out.println(order));
 	}
 	
 	
