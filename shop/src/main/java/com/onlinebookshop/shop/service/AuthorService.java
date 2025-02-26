@@ -2,9 +2,12 @@ package com.onlinebookshop.shop.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.onlinebookshop.shop.model.Author;
 import com.onlinebookshop.shop.repository.AuthorRepository;
 
+@Service
 public class AuthorService {
 	private AuthorRepository authorRepo;
 

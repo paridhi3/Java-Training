@@ -2329,3 +2329,259 @@ java.net.URISyntaxException: Illegal character in path at index 16: file:/C:/Pro
 2025-02-25 16:07:59,715 [Worker-397: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
 2025-02-25 16:07:59,723 [Worker-397: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
 2025-02-25 16:20:45,499 [Worker-402: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-25 16:20:45,501 [Worker-402: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-25 16:20:45,513 [Worker-402: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:52:31,260 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:52:31,385 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 09:52:31,389 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:52:34,372 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:52:34,438 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 09:52:34,443 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:54:10,733 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:54:10,752 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:54:10,757 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:54:41,937 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:54:41,954 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:54:41,958 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:54:46,841 [Worker-502: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:54:46,859 [Worker-502: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:54:46,865 [Worker-502: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:55:16,284 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:55:16,299 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:55:16,304 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:57:45,782 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:57:45,800 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:57:45,810 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:57:49,657 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:57:49,668 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:57:49,672 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:58:35,069 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:58:35,085 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:58:35,090 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:59:18,968 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:59:18,982 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:59:18,988 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 09:59:54,277 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 09:59:54,322 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 09:59:54,331 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:00:25,508 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:00:25,519 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:00:25,523 [Worker-505: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:01:28,360 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:01:28,372 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:01:28,375 [Worker-498: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:03:31,361 [Worker-507: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:03:31,382 [Worker-507: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:03:31,392 [Worker-507: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:03:42,060 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:03:42,074 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:03:42,078 [Worker-503: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:04:33,997 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:04:34,011 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:04:34,017 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:09:03,710 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:09:03,725 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:09:03,729 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:09:24,685 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:09:24,699 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:09:24,709 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:09:39,555 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:09:39,569 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:09:39,577 [Worker-504: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:17:48,841 [Worker-513: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:17:48,857 [Worker-513: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:17:48,862 [Worker-513: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:19:19,535 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:19:19,548 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:19:19,551 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:19:24,917 [Worker-511: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:19:24,931 [Worker-511: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:19:24,936 [Worker-511: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:20:56,328 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:20:56,339 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 10:20:56,341 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:21:44,005 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:21:44,020 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:21:44,027 [Worker-512: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:23:43,730 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:23:43,757 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:23:43,766 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:23:49,172 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:23:49,190 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:23:49,194 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:28:30,197 [Worker-518: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:28:30,217 [Worker-518: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:28:30,222 [Worker-518: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:28:34,897 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:28:34,913 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:28:34,917 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:29:10,880 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:29:10,929 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:29:10,934 [Worker-506: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:29:15,858 [Worker-517: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:29:15,874 [Worker-517: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:29:15,879 [Worker-517: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:32:10,277 [Worker-522: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:32:10,290 [Worker-522: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:32:10,294 [Worker-522: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:33:29,694 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:33:29,714 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:33:29,722 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:37:50,812 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:37:50,853 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:37:50,863 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:38:26,183 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:38:26,200 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:38:26,203 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:38:55,404 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:38:55,422 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:38:55,427 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:40:06,832 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:40:06,856 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:40:06,861 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:40:41,670 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:40:41,685 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:40:41,689 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:42:34,433 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:42:34,451 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:42:34,457 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:43:18,705 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:43:18,718 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:43:18,721 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:45:47,999 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:45:48,013 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:45:48,017 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:45:54,130 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:45:54,151 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:45:54,158 [Worker-528: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:46:19,249 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:46:19,269 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:46:19,276 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:47:07,439 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:47:07,452 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:47:07,456 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:47:14,988 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:47:15,009 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:47:15,014 [Worker-519: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:51:45,155 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:51:45,174 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:51:45,181 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:52:16,702 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:52:16,716 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:52:16,719 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:52:44,329 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:52:44,350 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:52:44,354 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:03,062 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:03,079 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:03,083 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:07,518 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:07,531 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:07,536 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:34,487 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:34,507 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:34,513 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:38,865 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:38,887 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:38,896 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:48,211 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:48,223 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:48,232 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:54:51,536 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:54:51,548 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:54:51,552 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:55:00,862 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:55:00,875 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:55:00,881 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:55:04,965 [Worker-531: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:55:04,985 [Worker-531: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:55:04,995 [Worker-531: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:56:25,540 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:56:25,555 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:56:25,559 [Worker-527: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:56:50,507 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:56:50,523 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:56:50,527 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:57:24,630 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:57:24,646 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:57:24,654 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:58:28,350 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:58:28,368 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:58:28,372 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 10:59:27,708 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 10:59:27,722 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 10:59:27,726 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:00:10,540 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:00:10,565 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:00:10,571 [Worker-532: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:01:05,863 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:01:05,882 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:01:05,889 [Worker-529: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:03:50,268 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:03:50,285 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:03:50,289 [Worker-524: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:21:29,192 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:21:29,225 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:21:29,237 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:23:05,903 [Worker-542: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:23:05,932 [Worker-542: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:23:05,944 [Worker-542: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:25:43,159 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:25:43,198 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:25:43,219 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:29:31,994 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:29:32,027 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:29:32,043 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:30:28,181 [Worker-539: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:30:28,219 [Worker-539: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:30:28,227 [Worker-539: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:30:59,484 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:30:59,526 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:30:59,535 [Worker-536: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:31:58,618 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:31:58,662 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:31:58,681 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:32:07,972 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:32:07,996 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:32:08,004 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:36:06,808 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:36:06,849 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:36:06,872 [Worker-541: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:36:25,578 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:36:25,607 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:36:25,616 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:36:44,563 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:36:44,598 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:36:44,606 [Worker-533: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:37:01,877 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:37:01,968 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:37:01,984 [Worker-540: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:41:53,092 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:41:53,115 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:41:53,126 [Worker-544: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:42:30,244 [Worker-549: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:42:30,267 [Worker-549: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:42:30,274 [Worker-549: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:48:06,453 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:48:06,486 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:48:06,503 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:49:13,324 [Worker-550: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:49:13,348 [Worker-550: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:49:13,359 [Worker-550: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:53:38,573 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:53:38,605 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:53:38,623 [Worker-551: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:54:31,681 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:54:31,726 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:54:31,745 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:55:38,001 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:55:38,046 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:55:38,056 [Worker-554: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:56:43,285 [Worker-553: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:56:43,335 [Worker-553: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:56:43,344 [Worker-553: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 11:56:51,999 [Worker-545: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 11:56:52,059 [Worker-545: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-26 11:56:52,076 [Worker-545: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
+2025-02-26 12:37:55,464 [Worker-561: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 12:37:55,503 [Worker-561: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes

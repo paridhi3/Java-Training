@@ -1,0 +1,27 @@
+package com.onlinebookshop.shop;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.onlinebookshop.shop.model.Book;
+import com.onlinebookshop.shop.service.BookService;
+
+@SpringBootApplication
+public class ShopApplication {
+	
+	private BookService bs;
+
+	public static void main(String[] args) {
+		SpringApplication.run(ShopApplication.class, args);
+	}
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		// test services
+		Book b1 = new Book(1, "Physics", 300, 1);
+		Book b2 = new Book(1, "Chemistry", 400, 1);
+		bs.addBook(book);
+		
+	}
+
+}

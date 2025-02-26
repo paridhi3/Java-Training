@@ -1,0 +1,58 @@
+package com.onlinebookshop.shop;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.onlinebookshop.shop.model.Book;
+import com.onlinebookshop.shop.service.BookService;
+
+@SpringBootApplication
+public class ShopApplication implements CommandLineRunner{
+	
+	private BookService bs;
+
+	public static void main(String[] args) {
+		SpringApplication.run(ShopApplication.class, args);
+	}
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		// TEST SERVICES
+		
+		// TESTING BOOK SERVICES
+		
+		Book b1 = new Book(1, "Physics", 300, 1);
+		Book b2 = new Book(2, "Chemistry", 400, 1);
+		
+		// add books
+		bs.addBook(b1);
+		bs.addBook(b2);
+		
+		// get all books
+		List<Book> books = bs.getAllBooks();
+		System.out.println("Books list");
+		books.forEach(book -> System.out.println(book));
+		
+		// get book by id
+		int book_id=1;
+		Book foundBook = bs.getBookById(book_id);
+		System.out.println(foundBook);
+		
+		// update book details
+		foundBook.setPrice(400);
+		bs.updateBookDetails(foundBook);
+		System.out.println("New price for book with id "+foundBook.getId()+" is "+foundBook.getPrice());
+		
+		// delete book
+		int BookID=3;
+		bs.deleteBook(BookID);
+		
+		// fetch updated book list
+		bs.getAllBooks().forEach(book -> System.out.println(book));
+	}
+	
+	
+
+}

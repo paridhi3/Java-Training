@@ -17,6 +17,12 @@ public class Author {
 		this.name = name;
 		this.country = country;
 	}
+	
+	public Author(String name, String country) {
+		super();
+		this.name = name;
+		this.country = country;
+	}
 
 	public int getId() {
 		return id;

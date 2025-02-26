@@ -2,9 +2,12 @@ package com.onlinebookshop.shop.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.onlinebookshop.shop.model.Order;
 import com.onlinebookshop.shop.repository.OrderRepository;
 
+@Service
 public class OrderService {
 	private OrderRepository orderRepo;
 

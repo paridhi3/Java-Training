@@ -6,12 +6,24 @@ public class Order {
 	private int id, bookId, quantity;
 	private Date order_date;
 	
+	
+	public Order() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Order(int id, int bookId, int quantity, Date order_date) {
 		super();
 		this.id = id;
 		this.bookId = bookId;
 		this.quantity = quantity;
 		this.order_date = order_date;
+	}
+	
+	public Order(int bookId, int quantity) {
+		super();
+		this.bookId = bookId;
+		this.quantity = quantity;
 	}
 	
 	public int getId() {
