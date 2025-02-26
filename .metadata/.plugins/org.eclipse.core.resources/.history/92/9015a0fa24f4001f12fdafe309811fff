@@ -1,0 +1,10 @@
+package com.onlinebookshop.shop.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Aspect // indicates this is a spring aspect class
+@Component // will register this aspect as a bean so that it can be injected
+public class LoggingAspect {
+
+}

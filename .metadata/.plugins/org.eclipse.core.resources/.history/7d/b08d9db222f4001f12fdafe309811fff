@@ -1,0 +1,9 @@
+package com.onlinebookshop.shop.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+@Component
+public class LoggingAspect {
+
+}
