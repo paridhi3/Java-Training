@@ -1,15 +1,13 @@
 package com.onlinebookshop.shop;
-import java.sql.Date;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import com.onlinebookshop.shop.config.ShopAppConfig;
 import com.onlinebookshop.shop.model.Author;
 import com.onlinebookshop.shop.model.Book;
 import com.onlinebookshop.shop.model.Order;
@@ -18,6 +16,7 @@ import com.onlinebookshop.shop.service.BookService;
 import com.onlinebookshop.shop.service.OrderService;
 
 @SpringBootApplication
+@EnableAspectJAutoProxy
 public class ShopApplication implements CommandLineRunner{
 	
 	@Autowired
