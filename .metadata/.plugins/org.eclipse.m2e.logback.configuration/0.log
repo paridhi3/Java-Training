@@ -2755,3 +2755,5 @@ java.net.URISyntaxException: Illegal character in path at index 16: file:/C:/Pro
 2025-02-26 16:52:37,080 [Worker-643: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-26 16:52:37,097 [Worker-643: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
 2025-02-26 16:53:00,967 [Worker-643: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-26 16:53:00,970 [Worker-643: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-26 16:53:00,982 [Worker-643: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\703417007\Downloads\shop\shop\src\test\resources
