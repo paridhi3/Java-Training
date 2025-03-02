@@ -1,0 +1,71 @@
+package test;
+
+import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class CourseManagementSystem {
+	
+    private LinkedList<course> courses;
+    
+    public static void main(String[] args) throws Exception {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("Enter number of courses: ");
+        int n = sc.nextInt();
+        
+        for(int i=0; i<n; i++) {
+        	System.out.println("Enter course ID: ");
+            int id = sc.nextInt();
+
+            System.out.println("Enter course name: ");
+            String name = sc.next();
+
+            System.out.println("Enter instructor name: ");
+            String instructor = sc.next();
+
+            System.out.println("Enter duration in weeks (>0):");
+            int duration = sc.nextInt ();
+            if(duration<=0) {
+            	throw new Exception ("duration must Be Greater Than Zero.");
+            }
+            
+            System.out.println("Enter Fee(>0):");
+            Double fee = sc.nextDouble ();
+            if(fee<=0) {
+            	throw new Exception ("Fee must Be Greater Than Zero.");
+            }
+
+            System.out.println("Enter Type: Technical/Non-Technical: ");
+            String type = sc.next();
+        }
+    	
+    }
+
+    public void addCourse(course course) {
+        try {
+            if (course.getFee() < 0) {
+                throw new IllegalArgumentException("Fee cannot be negative.");
+            }
+            courses.add(course);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void sortCoursesByFee() {
+        courses.sort(Comparator.comparingDouble(course::getFee));
+    }
+
+   public List<course> filterCoursesByDuration() { 
+       return courses.stream()
+                     .filter(course -> course.getDurationWeeks()>4)
+                     .collect(Collectors.toList());  
+   } 
+
+     public List<course> getAllCourses(){
+         return new LinkedList<>(courses);  
+     } 
+}
+

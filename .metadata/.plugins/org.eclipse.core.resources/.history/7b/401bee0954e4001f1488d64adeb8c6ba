@@ -1,0 +1,19 @@
+package collections;
+
+public class product {
+	int prodID;
+	String prodName;
+	double prodPrice;
+	
+	public product(int prodID, String prodName, double prodPrice) {
+		super();
+		this.prodID = prodID;
+		this.prodName = prodName;
+		this.prodPrice = prodPrice;
+	}
+	
+	@Override
+	public String toString() {
+		return "Product [prodID=" + prodID + ", prodName=" + prodName + ", prodPrice=" + prodPrice + "]";
+	}
+}

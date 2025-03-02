@@ -1,0 +1,11 @@
+package MovieTicketBooking;
+
+public class RowSetApp {
+
+	public static void main(String[] args) {
+		try {
+			Connection conn = DatabaseConnection.getConnection();
+		}
+	}
+
+}

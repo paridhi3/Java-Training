@@ -1,0 +1,14 @@
+package MovieTicketBooking;
+
+public class DatabseTables {
+	
+	public static void createTables() {
+		
+	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

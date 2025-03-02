@@ -1,0 +1,10 @@
+package MovieTicketBooking;
+
+import java.util.Scanner;
+
+public class bookTicket {
+	
+	public static void bookTicket
+	Scanner sc = new Scanner(System.in);
+	
+}

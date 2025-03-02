@@ -1,0 +1,34 @@
+package oops;
+
+import java.util.Scanner;
+
+//import java.util.ArrayList;
+
+public class BookManagement {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter book ID: ");
+		int id = sc.nextInt();
+		
+		System.out.println("Enter book title: ");
+		String title = sc.next();
+		
+		System.out.println("Enter book author: ");
+		String author = sc.next();
+		
+		System.out.println("Enter book price: ");
+		double price = sc.nextDouble();
+		
+		System.out.println("Is the book available? Enter 1 for yes, 0 for no:");
+		boolean isAvail = sc.nextBoolean();
+				
+		Book book1 = new Book(id, title, author, price, isAvail);
+		
+		System.out.println("Calling issue function:")
+		book1.issue();
+		
+		book1.displayDetails();
+	}
+}
+

@@ -1,0 +1,43 @@
+package com.onlinebookshop.shop.service;
+
+import java.util.List;
+
+import com.onlinebookshop.shop.model.Order;
+import com.onlinebookshop.shop.repository.OrderRepository;
+
+@Service
+public class OrderService {
+	private OrderRepository orderRepo;
+
+	public OrderService(OrderRepository orderRepo) {
+		super();
+		this.orderRepo = orderRepo;
+	}
+	
+	// add new order
+	public void addOrder(Order order) {
+		orderRepo.save(order);
+	}
+	
+	// find all orders
+	public List<Order> getAllOrders() {
+		return orderRepo.findAll();
+	}
+	
+	// find order by id
+	public Order getOrderById(int id) {
+		return orderRepo.findById(id);
+	}
+	
+	// update order
+	public void updateOrderDetails(Order order) {
+		orderRepo.update(order);
+	}
+	
+	// delete order
+	public void deleteOrder(int id) {
+		orderRepo.delete(id);
+	}
+	
+	
+}

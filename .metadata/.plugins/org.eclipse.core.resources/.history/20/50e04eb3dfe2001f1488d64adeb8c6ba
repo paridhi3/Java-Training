@@ -1,0 +1,19 @@
+package oops;
+
+public class EmpApp {
+
+	public static void main(String[] args) {
+		fullTimeEmployee emp1=new fullTimeEmployee("paridhi",123,"IT", 50000.00, 30000.0, 5);
+		System.out.println("Monthly Salary is: "+emp1.calSalary());
+		emp1.displayEmpDetails();
+		
+		intern emp2=new intern("Jay", 456, "SDE", 55000, 1000, 3);
+		System.out.println(emp2.calSalary());
+		emp2.displayEmpDetails();
+		
+		partTimeEmployee emp3=new partTimeEmployee("abc", 777, "support", 1000);
+		System.out.println(emp3.calSalary());
+		emp3.displayEmpDetails();
+	}
+
+}

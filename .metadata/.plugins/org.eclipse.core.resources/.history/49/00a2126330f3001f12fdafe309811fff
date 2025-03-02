@@ -1,0 +1,12 @@
+package com.ems.EMS.service;
+
+@Service
+public class HRService {
+ 
+	@Autowired
+	public HR hr;
+	public Employee getEmpById(int empId) {
+		Map<Integer, Employee> empRecords = hr.getEmployeeRecords();
+		return empRecords.getOrDefault(empId, null);
+	}
+}

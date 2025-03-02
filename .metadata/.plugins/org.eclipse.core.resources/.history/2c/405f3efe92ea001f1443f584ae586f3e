@@ -1,0 +1,29 @@
+package MovieTicketBooking;
+
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class StoredProcedureCallable {
+	public static void proCall() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter username ");
+		String username=sc.next();
+		sc.nextLine();
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn==null) {
+			System.out.println("Database Connection Failed.");
+			return;
+		}
+		try {
+			String procedure = "create Procedure test(IN movieid, OUT movietitle varchar(25))"
+					           + "BEGIN"
+					           +  "Select title into movietitle from movies where movie_id=movieid;"
+					           +  "END;";
+			Statement smt=conn.createStatement();
+			smt.execute(procedure);
+		}
+		catch(SQLException e) {
+		       e.printStackTrace();
+		       }
+	}
+}

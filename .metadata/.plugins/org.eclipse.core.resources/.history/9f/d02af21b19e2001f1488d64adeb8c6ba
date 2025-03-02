@@ -1,0 +1,158 @@
+package oops;
+
+import java.util.Scanner;
+
+public class BankAppNew {
+	
+	public static BankAccountClass[] accounts;
+	private static int totalAccounts = 0;
+	private static int maxAccounts = 5;
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		accounts = new BankAccountClass[5];
+		
+		while(true) {
+			System.out.println("Bank Menu");
+			System.out.println("Press 1: To create account");
+			System.out.println("Press 2: To display all accounts");
+			System.out.println("Press 3: Deposit money");
+			System.out.println("Press 4: Withdraw money");
+			System.out.println("Press 5: Transfer money");
+			System.out.println("Press 6: Exit");
+			
+			int choice = sc.nextInt();
+			
+			switch(choice) {
+			case 1:
+				createAccount(sc);
+				break;
+			case 2:
+				displayAllAccounts();
+				break;
+			case 3:
+				depositMoney(sc);
+				break;
+			case 4:
+				withdrawMoney(sc);
+				break;
+			case 5:
+				transferMoney(sc);
+				break;
+			case 6:
+				System.out.println("Thank you");
+				sc.close();
+				return;
+			default:
+				System.out.println("Invalid choice");
+			}
+		}
+	}
+	
+	
+	public static void createAccount(Scanner sc) {
+		if(totalAccounts >= maxAccounts) {
+			System.out.println("Cannot create more accounts");
+			return;
+		}
+		
+		System.out.println("Enter Account Number: ");
+		int accNum = sc.nextInt();
+		
+		System.out.println("Enter Account Holder Name: ");
+		String name = sc.next();
+		
+		System.out.println("Enter Account Balance: ");
+		double bal = sc.nextDouble();
+		
+		System.out.println("Savings or Current Account? ");
+		String isSaving = sc.next();
+		
+		if(isSaving.equalsIgnoreCase("yes")) {
+			System.out.println("Enter Interest Rate: ");
+			double intRate = sc.nextDouble();
+			accounts[totalAccounts] = new SavingsBankAccClass(accNum, name, bal, intRate);
+		}
+		else {
+			accounts[totalAccounts] = new BankAccountClass(accNum, name, bal);
+		}
+		
+		System.out.println("Account created successfully");
+		totalAccounts++;
+	}
+	
+	public static void displayAllAccounts() {
+		if(totalAccounts==0) {
+			System.out.println("No Accounts to display");
+			return;
+		}
+		System.out.println("Bank Account details:");
+		for(int i=0; i<totalAccounts; i++) {
+			accounts[i].displayDetails();
+			System.out.println("-------------------------------------");
+		}
+	}
+	
+	public static void depositMoney(Scanner sc) {
+		System.out.println("Enter Account Number: ");
+		int accNum = sc.nextInt();
+		
+		System.out.println("Enter Amount to deposit: ");
+		double amount = sc.nextDouble();
+		
+		BankAccountClass account = findAccount(accNum);
+		
+		if(account!=null) {
+			account.deposit(amount);
+		}
+		else {
+			System.out.println("Account not found");
+		}
+	}
+	
+	public static BankAccountClass findAccount(int accNumber) {
+		for(int i=0; i<totalAccounts; i++) {
+			if(accounts[i].getAccountNumber()==accNumber) {
+				return accounts[i];
+			}
+		}
+		return null;
+	}
+	
+	public static void withdrawMoney(Scanner sc) {
+		System.out.println("Enter Account Number: ");
+		int accNum = sc.nextInt();
+		
+		System.out.println("Enter Amount to withdraw: ");
+		double amount = sc.nextDouble();
+		
+		BankAccountClass account = findAccount(accNum);
+		
+		if(account!=null) {
+			account.withdraw(amount);
+		}
+		else {
+			System.out.println("Account not found");
+		}
+	}
+	
+	public static void transferMoney(Scanner sc) {
+		System.out.println("Enter Account Number of recipient: ");
+		int accNum = sc.nextInt();
+		
+		System.out.println("Enter Amount to transfer: ");
+		double amount = sc.nextDouble();
+		
+		BankAccountClass account = findAccount(accNum);
+		
+		if(account!=null) {
+			account.transfer(amount, accNum);
+		}
+		else {
+			System.out.println("Account not found");
+		}
+	}
+	
+
+}

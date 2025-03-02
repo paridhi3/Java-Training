@@ -1,0 +1,22 @@
+package MovieTicketBooking;
+
+public class app {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to PVR INOX");
+		System.out.println("What would you like to do today?");
+		System.out.println("Press 1: Book Movie Tickets");
+		System.out.println("Press 2: To see all avaliable movies and shows");
+		System.out.println("Press 3: Exit");
+//		ShowAvailableMovies.displayAll();
+		TicketBooking.bookTicket();
+	}
+
+}
+
+//1. select the desired movie
+//2. select a show from the available shows from that movie
+//3. check the number of available seats in that show
+//4. ask user for number of ppl coming to watch movie
+//5. subtract (number of ppl) from (available seats)
+//6. display confirmation

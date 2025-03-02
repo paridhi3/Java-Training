@@ -1,0 +1,96 @@
+package com.onlinebookshop.shop;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.onlinebookshop.shop.model.Author;
+import com.onlinebookshop.shop.model.Book;
+import com.onlinebookshop.shop.service.BookService;
+
+@SpringBootApplication
+public class ShopApplication implements CommandLineRunner{
+	
+	@Autowired
+	private BookService bookService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(ShopApplication.class, args);
+	}
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		// TEST SERVICES
+		
+//		// TESTING BOOK SERVICES
+//		
+//		Book b1 = new Book(1, "Physics", 300, 1);
+//		Book b2 = new Book(2, "Chemistry", 400, 1);
+//		
+//		// add books
+//		bookService.addBook(b1);
+//		bookService.addBook(b2);
+//		
+//		// get all books
+//		List<Book> books = bookService.getAllBooks();
+//		System.out.println("Books list");
+//		books.forEach(book -> System.out.println(book));
+//		
+//		// get book by id
+//		int book_id=1;
+//		Book foundBook = bookService.getBookById(book_id);
+//		System.out.println(foundBook);
+//		
+//		// update book details
+//		foundBook.setPrice(400);
+//		bookService.updateBookDetails(foundBook);
+//		System.out.println("New price for book with id "+foundBook.getId()+" is "+foundBook.getPrice());
+//		
+//		// delete book
+//		int BookID=3;
+//		bookService.deleteBook(BookID);
+//		
+//		// fetch updated book list
+//		bookService.getAllBooks().forEach(book -> System.out.println(book));
+		
+		
+// -------------------------------------------------------------------------------------------------------------------
+		
+		// TESTING AUTHOR SERVICES
+		
+		Author a1 = new Author(4, "H. C. Verma", "India");
+		Author a2 = new Author(5, "S. N. Tandon", "India");
+				
+				// add books
+				bookService.addBook(b1);
+				bookService.addBook(b2);
+				
+				// get all books
+				List<Book> books = bookService.getAllBooks();
+				System.out.println("Books list");
+				books.forEach(book -> System.out.println(book));
+				
+				// get book by id
+				int book_id=1;
+				Book foundBook = bookService.getBookById(book_id);
+				System.out.println(foundBook);
+				
+				// update book details
+				foundBook.setPrice(400);
+				bookService.updateBookDetails(foundBook);
+				System.out.println("New price for book with id "+foundBook.getId()+" is "+foundBook.getPrice());
+				
+				// delete book
+				int BookID=3;
+				bookService.deleteBook(BookID);
+				
+				// fetch updated book list
+				bookService.getAllBooks().forEach(book -> System.out.println(book));
+	}
+	
+	
+
+}

@@ -1,0 +1,16 @@
+package collections;
+
+import java.util.Comparator;
+
+public class comparingCategoryproduct implements Comparator<product>{
+
+	@Override
+	public int compare(product p1, product p2) {
+		
+		// first make comparison by category
+		int categoryComparison = p1.prodCategory.compareTo(p2.prodCategory);
+		
+		return 0;
+	}
+
+}

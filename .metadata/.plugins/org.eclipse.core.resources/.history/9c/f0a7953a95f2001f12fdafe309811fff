@@ -1,0 +1,34 @@
+package com.ems.EMS.model;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "com.ems.EMS.model")
+public class EmsAppConfig {
+	
+	@Bean
+	public Address address() {
+		Address address = new Address();
+		address.setStreet("");
+		return null;
+	}
+	
+	@Bean
+	public Department dept() {
+		Department dept = new Department();
+		dept.setDeptID(0);
+		dept.setDeptName(null);
+		return null;
+	}
+	
+	@Bean
+	public List<String> skills() {
+		return Arrays.asList(null);
+	}
+
+}

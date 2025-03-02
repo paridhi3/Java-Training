@@ -1,0 +1,50 @@
+package Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class OrderService2Test {
+	
+	private OrderService2 os2;
+	
+	@BeforeEach
+	public void setup() {
+		os2 = new OrderService2();
+	}
+
+	@Test
+	public void testCalPrice_ValidInputs() {
+		double price = 100.00;
+		int quantity = 2;
+		double expected = price * quantity * (1 - os2.getDiscount());
+		assertEquals(expected, os2.calPrice(price, quantity));
+	}
+	
+	@Test
+	public void testCalPrice_InvalidInputs() {
+		double price = 0;
+		int quantity = 0;
+		double expected = price * quantity * (1 - os2.getDiscount());
+		assertEquals(expected, os2.calPrice(price, quantity));
+	}
+	
+	@Test
+	public void testCalPrice_InvalidInputs2() {
+		double price = -100.00;
+		int quantity = 0;
+		double expected = price * quantity * (1 - os2.getDiscount());
+		assertEquals(expected, os2.calPrice(price, quantity));
+	}
+	
+	// edge case - quantity same as stock
+	@Test
+	public void testCalPrice_InvalidInputs3() {
+		double price = 100.00;
+		int quantity = os2.getStock();
+		double expected = price * quantity * (1 - os2.getDiscount());
+		assertEquals(expected, os2.calPrice(price, quantity));
+	}
+
+}

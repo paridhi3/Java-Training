@@ -1,0 +1,18 @@
+package EmpMgmt;
+
+public class PayrollManager {
+	public static void generatePayroll(Employee emp) {
+		double salary = emp.calSalary();
+		
+		// instanceof ->
+		// if fte,pte: tax yes, else no
+		double tax = (emp instanceof Taxable) ? (((Taxable) emp).calTax(salary)) : 0;
+		double salary = (emp instanceof Manager)
+		
+		double netSalary = salary - tax;
+		System.out.println("Payroll for: "+emp.getEmpName());
+		System.out.println("Monthly Salary: "+salary);
+		System.out.println("Tax deduction: "+tax);
+		System.out.println("Net Salary: "+netSalary);		
+	}
+}

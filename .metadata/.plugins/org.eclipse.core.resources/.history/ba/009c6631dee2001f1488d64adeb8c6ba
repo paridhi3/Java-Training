@@ -1,0 +1,34 @@
+package oops;
+
+public class partTimeEmployee extends Employee {
+
+	private int durationMonth;
+	private double salary;
+ 
+	public partTimeEmployee(String empName, int empId, String empDept, double salary) {
+		super(empName, empId, empDept);
+		this.salary=salary;
+	}
+ 
+	public int getDurationMonth() {
+		return durationMonth;
+	}
+ 
+	public void setDurationMonth(int durationMonth) {
+		this.durationMonth = durationMonth;
+	}
+ 
+	public double getSalary() {
+		return salary;
+	}
+ 
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+ 
+	@Override
+	double calSalary() {
+		return salary;
+	}
+
+}

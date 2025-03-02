@@ -1,0 +1,18 @@
+package javaFeatures;
+
+import java.util.Arrays;
+
+interface Maths {
+	int operate(int a, int b);
+}
+
+public class lambaExp {
+
+	public static void main(String[] args) {
+		Maths add = (a,b) -> a+b;
+		System.out.println(add.operate(2, 3));
+		
+		List<String> names = Arrays.asList("name1","name2", "name3");
+	}
+
+}

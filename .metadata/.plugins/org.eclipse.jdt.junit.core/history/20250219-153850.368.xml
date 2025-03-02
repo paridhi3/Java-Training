@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderService2TestThread" project="Testing" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="Junit.OrderService2TestThread" time="0.035" displayname="OrderService2TestThread" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2TestThread]">
+    <testcase name="testPlaceOrderMultithread" classname="Junit.OrderService2TestThread" time="0.035" displayname="testPlaceOrderMultithread()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2TestThread]/[method:testPlaceOrderMultithread()]"/>
+  </testsuite>
+</testrun>

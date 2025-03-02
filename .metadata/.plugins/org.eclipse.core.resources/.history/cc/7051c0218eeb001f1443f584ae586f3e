@@ -1,0 +1,38 @@
+package MovieTicketBooking;
+
+import java.util.Scanner;
+
+public class app {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("Welcome to PVR INOX");
+			System.out.println("What would you like to do today?");
+			System.out.println("Press 1: Book Movie Tickets");
+			System.out.println("Press 2: To see all avaliable movies and shows");
+			System.out.println("Press 3: Exit");
+			
+			int res = sc.nextInt();
+			
+			switch (res) {
+            case 1:
+            	TicketBooking.bookTicket();
+                break;
+            case 2:
+            	ShowAvailableMovies.displayAll();
+                break;
+            case 3:
+                System.out.println("Thank you, exiting from system");
+                sc.close();
+                return;
+            default:
+            	System.out.println("Invalid choice");
+
+            }
+//		TicketBooking.bookTicket();
+//		bookingConfirmation.confirmBooking();
+//		TicketCancellation.cancelTicket();
+		}
+		
+	}

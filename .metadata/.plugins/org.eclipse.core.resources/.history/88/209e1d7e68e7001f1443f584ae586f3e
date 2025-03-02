@@ -1,0 +1,18 @@
+package javaFeatures;
+
+public class Employee {
+	private String name;
+	private String empID;
+	
+	public Employee(String name, String empID) {
+		super();
+		this.name = name;
+		this.empID = empID;
+	}
+	
+	public Employee(String name) {
+		super();
+		this.name = name;
+		System.out.println("Employee Created: "+name);
+	}
+}

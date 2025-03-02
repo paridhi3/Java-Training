@@ -1,0 +1,8 @@
+insert into authors (name) values('J.k. Rowling'),('Robert Dower Jr.');
+insert into books (title, author_id, price) values
+('Spring framework', 1, 350.00),
+('microservices', 2, 450.00);
+insert into orders (book_id, quantity) values
+(1, 2),
+(2, 2);
+has context menu

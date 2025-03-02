@@ -1,0 +1,12 @@
+package EmpMgmt;
+
+public class FTE extends Employee implements Taxable, WorkHours{
+	
+	private double bonus;
+	
+	public FTE(String empName, int empID, String dept, double baseSalary, int leaveBalance, double bonus) {
+		super(empName, empID, dept, baseSalary, leaveBalance);
+		this.bonus = bonus;
+	}
+
+}

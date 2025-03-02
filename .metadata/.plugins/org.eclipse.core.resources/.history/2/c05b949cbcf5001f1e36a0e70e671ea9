@@ -1,0 +1,44 @@
+
+// import from math.js using named import
+import{add, sub, pi} from './math.js';
+
+console.log(add(1,2), sub(1,2), pi);
+
+// import from math.js using alias
+import {add as sum, sub as diff} from './math.js';
+console.log(sum(2,3));
+
+// default import from utility.js
+import greet from './utility.js';
+console.log(greet(paridhi));
+
+// import both types
+import greetMath, {add, pi} from './math.js';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

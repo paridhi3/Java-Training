@@ -1,0 +1,125 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+public class StoredProcedureCallable {
+	public static void proCall() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn==null) {
+			System.out.println("Database Connection Failed.");
+			return;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter your movie Id: ");
+        int movieId = sc.nextInt();
+		
+		try {
+			String procedure = "CREATE PROCEDURE GetMovieTitle(IN movieId INT, OUT movietitle VARCHAR(255), OUT movieGenre VARCHAR(255)) "
+                    + "BEGIN "
+                    + "SELECT title, genre INTO movietitle, movieGenre FROM movies "
+                    + "WHERE movie_id = movieId; "
+                    + "END;";
+			
+		   Statement stmt = conn.createStatement();
+		   stmt.execute(procedure);
+		   System.out.println("Stored procedure created successfully.");
+		}
+		catch(SQLException e) {
+		       e.printStackTrace();
+		       }
+	}
+	
+	
+	public static void fetchBookings() {
+			
+			Connection conn = DatabaseConnection.getConnection();
+			if(conn==null) {
+				System.out.println("Database Connection Failed.");
+				return;
+			}
+			
+			Scanner sc = new Scanner(System.in);
+			System.out.print("Enter your username: ");
+	        String username = sc.next();
+			
+			try {
+				String procedure = "CREATE PROCEDURE GetBookings(IN username VARCHAR(20)) "
+	                    + "BEGIN "
+	                    + "SELECT * FROM bookings WHERE bookings.username=username; "
+	                    + "END;";
+				
+			   Statement stmt = conn.createStatement();
+			   stmt.execute(procedure);
+			   System.out.println("Stored procedure GetBookings created successfully.");
+			}
+			catch(SQLException e) {
+			       e.printStackTrace();
+			}
+		}
+	
+	
+	public static void cancelTicket() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn==null) {
+			System.out.println("Database Connection Failed.");
+			return;
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		int booking_id;
+		
+		System.out.print("Enter your username: ");
+        String username = sc.next();
+        
+        System.out.print("Which booking id do you want to cancel? ");
+        
+        
+        String query = "select booking_id from bookings where username=?";
+        try (PreparedStatement psmt = conn.prepareStatement(query)) {
+			psmt.setInt(1, booking_id);
+			
+			ResultSet rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int bookingID = rs.getInt("booking_id");
+				System.out.printf("Booking ID=" +bookingID);
+			}
+			booking_id = sc.nextInt();
+        
+			String procedure = "CREATE PROCEDURE CancelBooking4(IN username VARCHAR(20), IN booking_id INT) "
+                    + "BEGIN "
+                    + " DECLARE booked_seats INT; "
+                    + " DECLARE booking_id INT; "
+                    + " DECLARE show_id INT; "
+                    + " SELECT seats_booked, booking_id, show_id INTO booked_seats, booking_id, show_id FROM bookings "
+                    + " WHERE booking_id = booking_id; "
+                    + " UPDATE shows SET available_seats = available_seats + booked_seats WHERE show_id = show_id; "
+                    + " DELETE FROM bookings WHERE booking_id = booking_id; "
+                    + "END;";
+
+			
+		   Statement stmt = conn.createStatement();
+		   stmt.execute(procedure);
+		   System.out.println("Stored procedure CancelBooking4 created successfully.");
+		catch(SQLException e) {
+		       e.printStackTrace();
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) throws SQLException {
+//        proCall();
+//        fetchBookings();
+		cancelTicket();
+    }
+}

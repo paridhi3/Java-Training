@@ -1,0 +1,35 @@
+package MovieTicketBooking;
+ 
+import java.sql.*;
+import java.util.*;
+ 
+public class Test {
+    public static void main(String[] args) {
+        Connection conn = null;
+        CallableStatement cstmt = null;
+        try {
+            conn = DatabaseConnection.getConnection();
+            if (conn == null) {
+                System.out.println("Database Connection Failed");
+                return;
+            }
+ 
+            cstmt = conn.prepareCall("{CALL GetMovieTitle(?, ?)}");
+ 
+            System.out.print("Enter your movie Id: ");
+            Scanner sc = new Scanner(System.in);
+            int movieId = sc.nextInt();
+            cstmt.setInt(1, movieId);
+ 
+            cstmt.registerOutParameter(2, Types.VARCHAR);
+
+            cstmt.execute();
+ 
+            String title = cstmt.getString(2);
+            System.out.println("Movie Title: " + title);
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

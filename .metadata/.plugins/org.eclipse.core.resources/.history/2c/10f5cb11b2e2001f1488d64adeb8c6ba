@@ -1,0 +1,18 @@
+package oops;
+
+public class DematClass extends BankAccountClass{
+	private int stockHoldings;
+	
+	public DematClass() {
+		super();
+	}
+	
+	public DematClass(int accountNumber, String accountHolderName, double initialBalance, int stocks) {
+		super(accountNumber, accountHolderName, initialBalance);
+		this.stockHoldings = stocks;
+	}
+	
+	public void buyStocks(int quantity, double pricePerStock) {
+		
+	}
+}

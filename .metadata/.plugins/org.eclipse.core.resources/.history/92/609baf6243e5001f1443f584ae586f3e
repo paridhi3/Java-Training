@@ -1,0 +1,29 @@
+package javaFeatures;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class productApp {
+
+	public static void main(String[] args) {
+		List<product> products = List.of(
+								 new product("milk", "grocery",90.0),
+								 new product("honey", "grocery",10000.0),
+								 new product("bread", "grocery",680.0),
+								 new product("Mobile","electronics",10000)
+								 );
+		
+		List<product> fiterProducts = products.stream()
+											  .filter(product -> product.getPrice()>5000 && product.getPrice()<50000)
+											  .collect(Collectors.toList());
+		System.out.println(fiterProducts);
+		
+		List<product> sortProducts = products.stream()
+											  .sorted(Comparator.compareDouble(product::getPrice()))
+											  .collect(Collectors.toList());
+		System.out.println(fiterProducts);
+		
+
+	}
+
+}

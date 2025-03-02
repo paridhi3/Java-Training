@@ -1,0 +1,41 @@
+package Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void testAdd() {
+		Calculator calc = new Calculator();
+		calc.add(5, 10);
+		assertEquals(15, calc.add(5, 10));
+	}
+
+	@Test
+	void testSubtract() {
+		Calculator calc = new Calculator();
+		calc.subtract(5, 10);
+		assertEquals(-5, calc.subtract(5, 10));
+	}
+	
+	@Test
+	void testCondition() {
+		Calculator calc = new Calculator();
+		assertTrue(calc.add(2,9)>0);
+	}
+	
+	@Test
+	void testCondition2() {
+		Calculator calc = new Calculator();
+		assertFalse(calc.add(6,8)<0);
+	}
+	
+	@Test
+	void testNull() {
+		Calculator calc = new Calculator();
+		assertFalse(calc.add(6,8)<0);
+	}
+
+}

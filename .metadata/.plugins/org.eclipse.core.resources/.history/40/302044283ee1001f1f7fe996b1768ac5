@@ -1,0 +1,38 @@
+package oops;
+
+public class SavingsBankAccClass extends BankAccountClass {
+	private double interestRate;
+	
+	public SavingsBankAccClass() {
+		super();
+	}
+	
+	public SavingsBankAccClass(int accountNumber, String accountHolderName, double initialBalance, double interestRate) {
+		super(accountNumber, accountHolderName, initialBalance);
+		this.setInterestRate(interestRate);
+	}
+
+	public double getInterestRate() {
+		return interestRate;
+	}
+
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	public double balanceAfterInterest()
+	{
+		double balance = super.getBalance();
+		balance += (balance * interestRate);
+		return balance;
+	}
+	
+	public void displayDetails(){
+		   System.out.println("------------------------------------------");
+	       System.out.println("Account Number: " +super.getAccountNumber());
+	       System.out.println("Account Holder Name: " +super.getAccountHolderName());
+	       System.out.println("Current Balance : " +super.getBalance()); 
+	       System.out.println("Balance after interest: "+sAcc.balanceAfterInterest());
+	       System.out.println("------------------------------------------");
+	   }
+}

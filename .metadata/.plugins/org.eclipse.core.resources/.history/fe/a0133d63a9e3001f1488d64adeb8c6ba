@@ -1,0 +1,19 @@
+package JavaBasicsPkg;
+
+import java.util.Scanner;
+
+public class ExceptionHandling {
+	System.out.println("Enter a and b: ");
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	try {
+		int result = a/b;
+	}
+	catch(Exception e) {
+		System.out.println(e.getMessage());
+	}
+	finally {
+		System.out.println("-----------------");
+	}
+}

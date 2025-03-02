@@ -1,0 +1,10 @@
+package javaFeatures;
+
+public class stringJoiner {
+
+	public static void main(String[] args) {
+		// StingJoiner: join strings with some delimiter, optional prefix and suffix
+
+	}
+
+}

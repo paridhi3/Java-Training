@@ -1,0 +1,41 @@
+package EmpMgmt;
+
+public class PTE extends Employee implements WorkHours{
+
+	public PTE(String empName, int empID, String dept, double baseSalary, int leaveBalance, int noOfHours, double hourlyRate) {
+		super(empName, empID, dept, baseSalary, leaveBalance);
+	}
+	//no taxable interface used, only work hours interface -> constant(not applicable here), getworkhours(define this differently)
+	//hourly rate, no. of hours
+
+	@Override
+	public String getName() {
+		return empName;
+	}
+
+	@Override
+	public int getID() {
+		return empID;
+	}
+
+	@Override
+	public int getWorkHours() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double calSalary() {
+		return baseSalary+bonus;
+	}
+
+	@Override
+	String getEmpType() {
+		return "Part Time Employee";
+	}
+
+	@Override
+	void provideBenefits() {
+		System.out.println("Health Insurance, PF");
+	}
+}

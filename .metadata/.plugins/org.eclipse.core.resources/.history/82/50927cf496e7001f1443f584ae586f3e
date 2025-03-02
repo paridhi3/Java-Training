@@ -1,0 +1,62 @@
+package test;
+
+public abstract class course {
+    private int courseId;
+    private String courseName;
+    private String instructor;
+    private int durationWeeks;
+    private double fee;
+
+    public course(int courseId, String courseName, String instructor, int durationWeeks, double fee) {
+        this.courseId = courseId;
+        this.courseName = courseName;
+        this.instructor = instructor;
+        this.durationWeeks = durationWeeks;
+        this.fee = fee;
+    }
+
+    public int getcourseId() {
+        return courseId;
+    }
+
+    public String getcourseName() {
+        return courseName;
+    }
+
+    public String getInstructor() {
+        return instructor;
+    }
+
+    public int getDurationWeeks() {
+        return durationWeeks;
+    }
+
+   public double getFee() {
+       return fee; 
+   }
+   
+   // Setter methods for each property
+   public void setcourseId(int courseId) { 
+       this.courseId = courseId; 
+   }
+   
+   public void setCourseName(String courseName) { 
+       this.courseName = courseName; 
+   }
+   
+   public void setInstructor(String instructor) { 
+       this.instructor = instructor; 
+   }
+   
+  public void setDurationWeeks(int durationWeeks) { 
+      this.durationWeeks = durationWeeks;  
+  } 
+  
+  public void setFee(double fee) {  
+      this.fee=fee ;  
+  } 
+
+     // Abstract method to be implemented by subclasses
+     protected abstract double calculateDiscount();
+}
+

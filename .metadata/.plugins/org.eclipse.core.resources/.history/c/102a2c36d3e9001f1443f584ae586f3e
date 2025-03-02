@@ -1,0 +1,31 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class InsertData {
+	
+	public static void insertMovies() {
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		String insertMoviesSQL = "INSERT INTO movies (title, genre, duration) values (?,?,?)";
+		PreparedStatement psmt = conn.prepareStatement(insertMoviesSQL);
+		
+		try {
+			psmt.setString(1, "Fighter");
+		}
+		
+		
+		
+	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

@@ -1,0 +1,36 @@
+package multiThreading;
+
+public class orderApp {
+
+	public static void main(String[] args) {
+		
+		Thread t1 = new Thread ();
+		Thread t2 = new Thread ();
+		
+		Thread t4 = new Thread (() -> {
+			for(int i=0; i<4; i++) {
+				obj.incrementCount();
+			}
+		});
+						
+//		t1.start();
+//		t2.start();
+		t3.start();
+		t4.start();
+		
+		try {
+//			t1.join();
+//			t2.join();
+			t3.join();
+			t4.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(obj.getCount());
+		System.out.println("Process completed.");
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package javaFeatures;
+
+import java.util.Optional;
+import java.util.StringJoiner;
+
+public class stringJoiner {
+
+	public static void main(String[] args) {
+		// StingJoiner: join strings with some delimiter, optional prefix and suffix
+		
+		StringJoiner sj = new StringJoiner(", "); // only delimiter
+		sj.add("name1");
+		sj.add("name2");
+		sj.add("name3");
+		sj.add("name4");
+		System.out.println(sj);
+		
+		StringJoiner sj2 = new StringJoiner(",", "\"", "\""); // only delimiter
+		sj2.add("name1");
+		sj2.add("name2");
+		sj2.add("name3");
+		sj2.add("name4");
+		System.out.println(sj);
+
+		
+		Optional<String> name = Optional.of("Java");
+		name.ifPresent(n->System.out.println("Name is "+n));
+		
+		Optional<String> name2 = Optional.of(""); // still works fine
+		name2.ifPresent(n->System.out.println("Name is "+n));
+	}
+
+}

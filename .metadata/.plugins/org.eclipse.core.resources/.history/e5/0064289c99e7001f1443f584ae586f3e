@@ -1,0 +1,86 @@
+package test;
+
+import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+class CourseManagementSystem {
+    private LinkedList<course> courses = new LinkedList<>();
+ 
+    public void addCourse(course course) {
+        courses.add(course);
+    }
+ 
+    public void sortCoursesByFee() {
+        courses.sort(Comparator.comparingDouble(course -> course.fee));
+    }
+ 
+    public List<course> filterCoursesByDuration() {
+        return courses.stream()
+                .filter(course -> course.durationWeeks > 4)
+                .collect(Collectors.toList());
+    }
+ 
+    public void displayCourses(List<Course> courses) {
+        for (course course : courses) {
+            System.out.println("Course ID: " + course.courseId + ", Name: " + course.courseName + ", Instructor: " + course.instructor + ", Duration: " + course.durationWeeks + " weeks, Fee: $" + course.fee + ", Discount: $" + course.calculateDiscount());
+        }
+    }
+ 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        CourseManagementSystem cms = new CourseManagementSystem();
+ 
+        System.out.print("Enter the number of courses: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+ 
+        for (int i = 0; i < n; i++) {
+            try {
+            	System.out.println("Enter Details for course "+(i+1)+": ");
+            	System.out.print("Enter Course ID: ");
+                int courseId = scanner.nextInt();
+                scanner.nextLine();
+ 
+                System.out.print("Enter Course Name: ");
+                String courseName = scanner.nextLine();
+ 
+                System.out.print("Enter Instructor Name: ");
+                String instructor = scanner.nextLine();
+ 
+                System.out.print("Enter Duration (weeks): ");
+                int durationWeeks = scanner.nextInt();
+ 
+                System.out.print("Enter Fee: ");
+                double fee = scanner.nextDouble();
+                scanner.nextLine();
+ 
+                System.out.print("Enter Course Type (Technical/Non-Technical): ");
+                String type = scanner.nextLine();
+                System.out.println();
+                Course course;
+                if (type.equalsIgnoreCase("Technical")) {
+                    course = new TechnicalCourse(courseId, courseName, instructor, durationWeeks, fee);
+                } else if (type.equalsIgnoreCase("Non-Technical")) {
+                    course = new NonTechnicalCourse(courseId, courseName, instructor, durationWeeks, fee);
+                } else {
+                    throw new IllegalArgumentException("Invalid course type.");
+                }
+ 
+                cms.addCourse(course);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        }
+ 
+        System.out.println("\nCourses sorted by fee:");
+        cms.sortCoursesByFee();
+        cms.displayCourses(cms.courses);
+ 
+        System.out.println("\nCourses with duration greater than 4 weeks:");
+        List<Course> filteredCourses = cms.filterCoursesByDuration();
+        cms.displayCourses(filteredCourses);
+    }
+}

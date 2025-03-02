@@ -1,0 +1,52 @@
+package oops;
+
+import java.util.ArrayList;
+
+public class BookManagement {
+	private ArrayList<Book> books;
+
+	// Constructor 
+	public BookManagement(){
+	this.books=new ArrayList<>();
+	}
+
+	// Method to add a new book 
+	public void addBook(Book book){
+	books.add(book);
+	}
+
+	// Method to fetch book by ID 
+	public Book getBookById(int id){
+	for(Book book :books){
+	if(book.getId()==id){
+	return book; 
+	} 
+	}
+	return null; }
+
+	//Method to list all books
+
+	public ArrayList<Book>getAllBooks(){
+	return books; } 
+
+	// Main method for testing
+
+	public static void main(String[]args){
+
+	BookstoreManagementSystem bms=new BookstoreManagementSystem();
+
+	// Adding Books
+
+	bms.addBook(new Book(1,"Effective Java","Joshua Bloch",45.00));
+	bms.addBook(new Book(2,"Clean Code","Robert C.Martin",50.00));
+
+	// Fetching and displaying a specific book by ID
+
+	System.out.println(bms.getBookById(1));
+
+	// Listing all Books
+
+	for(Book book:bms.getAllBooks()){
+	System.out.println(book); } } 
+}
+

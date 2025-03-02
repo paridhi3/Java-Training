@@ -1,0 +1,17 @@
+package test;
+
+public class NonTechnicalCourse extends course {
+    // Constructor for NonTechnicalCourse
+    public NonTechnicalCourse(int courseId, String courseName, String instructor, int durationWeeks, double fee) {
+        super(courseId, courseName, instructor, durationWeeks, fee);
+    }
+
+    @Override
+    protected double calculateDiscount() {
+        // Apply a 5% discount if the fee is more than $15,000
+        if (getFee() > 15000) {
+            return getFee() * 0.95; // Fee after applying a 5% discount
+        }
+        return getFee(); // No discount applied 
+   } 
+}

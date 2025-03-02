@@ -1,0 +1,35 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.sql.rowset.JdbcRowSet;
+import javax.sql.rowset.RowSetProvider;
+
+public class RowSetApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Connection conn = DatabaseConnection.getConnection();
+			JdbcRowSet rowSet =RowSetProvider.newFactory().createJdbcRowSet();
+			rowSet.setUrl("jdbc:mysql://localhost:3306/movie_booking");
+			rowSet.setUsername("root");
+			rowSet.setPassword("Genpact@123456789");
+ 
+			rowSet.setCommand("Select * from movie");
+			rowSet.execute();
+			while(rowSet.next()) {
+				System.out.println("ID: "+rowSet.getInt("movie_id"));
+			}
+			while(rowSet.previous()) {
+				System.out.println("ID: "+rowSet.getInt("movie_id"));
+			}
+ 
+			rowSet.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

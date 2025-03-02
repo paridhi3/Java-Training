@@ -1,0 +1,22 @@
+package MovieTicketBooking;
+
+public class ShowAvailableMovies {
+	
+	public static void displayAll() {
+		String query = "SELECT"
+				+ "    movies.movie_id,"
+				+ "    movies.title,"
+				+ "    movies.genre,"
+				+ "    movies.duration,"
+				+ "    shows.show_id,"
+				+ "    shows.show_time,"
+				+ "    shows.available_seats"
+				+ "FROM "
+				+ "    movies"
+				+ "INNER JOIN "
+				+ "    shows ON movies.movie_id = shows.movie_id;";
+		
+		
+	}
+	
+}

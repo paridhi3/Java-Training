@@ -1,0 +1,6 @@
+package oops;
+
+public interface EmployeeInterface {
+	public void displayEmpDetails();
+	public double calSalary();
+}

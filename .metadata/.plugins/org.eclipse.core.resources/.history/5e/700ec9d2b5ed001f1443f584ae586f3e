@@ -1,0 +1,115 @@
+package HMSystem;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class AppointmentDAO {
+	
+	public static void addAppointment(Appointment app) {
+	    Connection conn = DatabaseConnection.getConnection();
+	    if (conn == null) {
+	        System.out.println("Database Connection Failed");
+	        return;
+	    }
+	    
+	    String query = "INSERT INTO appointment (patient_id, doctor_id, appointment_date, reason) VALUES (?, ?, ?, ?)";
+	    try (PreparedStatement psmt = conn.prepareStatement(query)) {
+	        psmt.setInt(1, app.getPatientId());
+	        psmt.setInt(2, app.getDoctorId());
+	        psmt.setDate(3, new java.sql.Date(app.getAppointmentDate().getTime()));
+	        psmt.setString(4, app.getReason());
+
+	        psmt.executeUpdate();
+	        System.out.println("Appointment added successfully.");
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
+
+
+ 
+	public static List<Appointment> getAllAppointments() {
+	    Connection conn = DatabaseConnection.getConnection();
+	    if (conn == null) {
+	        System.out.println("Database Connection Failed");
+	        return null;
+	    }
+	    
+	    List<Appointment> appts = new ArrayList<>();
+	    String query = "SELECT * FROM appointment";
+	    
+	    try (Statement smt = conn.createStatement();
+	         ResultSet rs = smt.executeQuery(query)) {
+	        while (rs.next()) {
+	            Appointment app = new Appointment(
+	                rs.getInt("patient_id"),
+	                rs.getInt("doctor_id"),
+	                rs.getDate("appointment_date"),
+	                rs.getString("reason")
+	            );
+	            app.setId(rs.getInt("id"));
+	            appts.add(app);
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return appts;
+	}
+
+
+ 
+    public static void updateAppointment(int id, Appointment app) {
+    	Connection conn = DatabaseConnection.getConnection();
+	    if (conn == null) {
+	        System.out.println("Database Connection Failed");
+	        return;
+	    }
+        String query = "UPDATE doctor SET name = ?, speciality = ?, contact = ? WHERE id = ?";
+        try (PreparedStatement psmt = conn.prepareStatement(query)) {
+ 
+            psmt.setString(1, doctor.getName());
+            psmt.setString(2, doctor.getSpeciality());
+            psmt.setString(3, doctor.getContact());
+            psmt.setInt(4, id);
+            int rowsAffected = psmt.executeUpdate();
+ 
+            if (rowsAffected > 0) {
+                System.out.println("Doctor updated successfully!");
+            } else {
+                System.out.println("Failed to update Doctor.");
+            }
+        }
+        catch(SQLException e) {
+        	e.printStackTrace();
+        }
+    }
+ 
+    public static void deleteDoctor(int id) {
+    	Connection conn = DatabaseConnection.getConnection();
+	    if (conn == null) {
+	        System.out.println("Database Connection Failed");
+	        return;
+	    }
+        String query = "DELETE FROM doctor WHERE id = ?";
+        try (PreparedStatement psmt = conn.prepareStatement(query)) {
+ 
+            psmt.setInt(1, id);
+            int rowsAffected = psmt.executeUpdate();
+ 
+            if (rowsAffected > 0) {
+                System.out.println("Doctor deleted successfully!");
+            } else {
+                System.out.println("Cannot delete Doctor.");
+            }
+        }
+        catch(SQLException e) {
+        	e.printStackTrace();
+        }
+    }
+	
+}

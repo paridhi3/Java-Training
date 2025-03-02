@@ -1,0 +1,47 @@
+package javaFeatures;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BiFunction;
+import java.util.function.Supplier;
+
+public class constructurRef {
+
+	public static void main(String[] args) {
+		Map<String, Integer> employees = new HashMap<>();
+		employees.put("name1", 1);
+		employees.put("name2", 2);
+		employees.put("name3", 3);
+		
+		//lambda
+		employees.keySet().forEach(name -> new Employee(name));
+		
+		System.out.println("--------------------------------------");
+		
+		//constructor ref
+		employees.keySet().forEach(Employee :: new);
+		
+		System.out.println("====================================================");
+		
+		// bifunction, supplier, fn
+		//BiFunction<T,U,R> -> T and U return result of type R
+		
+		//lambda
+		BiFunction<String, Integer, Employee> employee = (name, id) -> new Employee(name, id);
+		employee.apply("name1", 123);
+		
+		//const ref
+		BiFunction<String, Integer, Employee> employee2 = Employee :: new;
+		employee.apply("name1", 123);
+		
+		// Supplier-> Supplier<T>: fn does not take any arg, returns obj of type T
+		//lambda
+		Supplier<Employee> emp3 = () -> new Employee();
+		emp3.get();
+		// const ref
+		Supplier<Employee> emp4 = Employee :: new;
+		emp4.get();
+
+	}
+
+}

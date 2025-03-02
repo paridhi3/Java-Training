@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderService2Test" project="Testing" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="Junit.OrderService2Test" time="0.053" displayname="OrderService2Test" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]">
+    <testcase name="placeOrderBeyondStock" classname="Junit.OrderService2Test" time="0.027" displayname="placeOrderBeyondStock()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:placeOrderBeyondStock()]"/>
+    <testcase name="TestCalPrice_NegativePrice" classname="Junit.OrderService2Test" time="0.003" displayname="TestCalPrice_NegativePrice()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:TestCalPrice_NegativePrice()]"/>
+    <testcase name="testCalPrice_InvalidInputs" classname="Junit.OrderService2Test" time="0.003" displayname="testCalPrice_InvalidInputs()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs()]"/>
+    <testcase name="setDiscountInvalid" classname="Junit.OrderService2Test" time="0.002" displayname="setDiscountInvalid()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:setDiscountInvalid()]"/>
+    <testcase name="testCalPrice_ValidInputs" classname="Junit.OrderService2Test" time="0.001" displayname="testCalPrice_ValidInputs()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_ValidInputs()]"/>
+    <testcase name="setStockNegative" classname="Junit.OrderService2Test" time="0.002" displayname="setStockNegative()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:setStockNegative()]"/>
+    <testcase name="testCalPrice_InvalidInputs2" classname="Junit.OrderService2Test" time="0.001" displayname="testCalPrice_InvalidInputs2()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs2()]"/>
+    <testcase name="testCalPrice_InvalidInputs5" classname="Junit.OrderService2Test" time="0.001" displayname="testCalPrice_InvalidInputs5()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs5()]"/>
+    <testcase name="testCalPrice_InvalidInputs6" classname="Junit.OrderService2Test" time="0.0" displayname="testCalPrice_InvalidInputs6()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testCalPrice_InvalidInputs6()]"/>
+    <testcase name="TestCalQuant_NegativePrice" classname="Junit.OrderService2Test" time="0.002" displayname="TestCalQuant_NegativePrice()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:TestCalQuant_NegativePrice()]"/>
+    <testcase name="testPlaceOrderSufficientStock" classname="Junit.OrderService2Test" time="0.002" displayname="testPlaceOrderSufficientStock()" uniqueid="[engine:junit-jupiter]/[class:Junit.OrderService2Test]/[method:testPlaceOrderSufficientStock()]"/>
+  </testsuite>
+</testrun>

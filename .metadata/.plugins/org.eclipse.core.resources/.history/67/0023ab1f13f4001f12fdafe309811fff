@@ -1,0 +1,65 @@
+package com.onlinebookshop.shop.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.onlinebookshop.shop.model.Author;
+import com.onlinebookshop.shop.model.Book;
+import com.onlinebookshop.shop.model.Order;
+
+@Configuration
+@ComponentScan(basePackages = "com.onlinebookshop.shop.*")
+public class ShopAppConfig {
+
+	@Bean
+	public Book b1() {
+	    Book book = new Book();
+	    book.setTitle("The Great Gatsby");
+	    book.setPrice(499.99);
+	    book.setAuthor_id(1);
+	    return book;
+	}
+	
+	@Bean
+	public Book b2() {
+	    Book book = new Book();
+	    book.setTitle("To Kill a Mockingbird");
+	    book.setPrice(399.99);
+	    book.setAuthor_id(2);
+	    return book;
+	}
+	
+	@Bean
+	public Author a1() {
+	    Author author = new Author();
+	    author.setName("F. Scott Fitzgerald");
+	    author.setCountry("United States");
+	    return author;
+	}
+	
+	@Bean
+	public Author author2() {
+	    Author author = new Author();
+	    author.setName("Harper Lee");
+	    author.setCountry("United States");
+	    return author;
+	}
+	
+	@Bean
+	public Order order1() {
+	    Order order = new Order();
+	    order.setBookId(1);
+	    order.setQuantity(2);
+	    return order;
+	}
+	
+	@Bean
+	public Order order2() {
+	    Order order = new Order();
+	    order.setBookId(2);
+	    order.setQuantity(3);
+	    return order;
+	}
+    
+}

@@ -1,0 +1,23 @@
+package oops;
+
+public class PremiumBankAcc extends SavingsBankAccClass {
+	
+	private double bonusInterest;
+	
+	public PremiumBankAcc() {
+		super();
+	}
+	
+	public SavingsBankAccClass(int accountNumber, String accountHolderName, double initialBalance, double interestRate) {
+		super(accountNumber, accountHolderName, initialBalance);
+		this.setInterestRate(interestRate);
+	}
+
+	public double getBonusInterest() {
+		return bonusInterest;
+	}
+
+	public void setBonusInterest(double bonusInterest) {
+		this.bonusInterest = bonusInterest;
+	}
+}

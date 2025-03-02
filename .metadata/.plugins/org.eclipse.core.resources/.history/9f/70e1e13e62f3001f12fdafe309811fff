@@ -1,0 +1,14 @@
+package com.onlinebookshop.shop.service;
+
+import com.onlinebookshop.shop.repository.AuthorRepository;
+
+public class AuthorService {
+	private AuthorRepository authorRepo;
+
+	public AuthorService(AuthorRepository authorRepo) {
+		super();
+		this.authorRepo = authorRepo;
+	}
+	
+	
+}

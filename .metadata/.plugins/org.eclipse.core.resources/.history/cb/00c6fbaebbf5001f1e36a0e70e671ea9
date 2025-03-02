@@ -1,0 +1,34 @@
+
+// import from math.js using named import
+import{add, sub, pi} from './math.js';
+
+console.log(add(1,2), sub(1,2), pi);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

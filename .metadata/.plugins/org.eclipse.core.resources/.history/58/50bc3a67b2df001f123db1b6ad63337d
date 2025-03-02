@@ -1,0 +1,15 @@
+package oops;
+
+
+public class BankApp {
+	public static void main(String[] args) {
+		BankAccountClass acc = new BankAccountClass(7898, "Paridhi", 20000);
+		BankAccountClass acc2 = new BankAccountClass();	
+		
+		acc.deposit(9000);
+		acc.withdraw(9000);
+		acc.getBalance();
+		
+		acc.displayDetails();
+	}
+}

@@ -1,0 +1,6 @@
+package com.onlinebookshop.shop.aspect;
+
+@Aspect
+public class LoggingAspect {
+
+}

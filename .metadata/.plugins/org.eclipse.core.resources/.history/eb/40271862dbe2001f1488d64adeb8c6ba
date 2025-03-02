@@ -1,0 +1,16 @@
+package oops;
+
+public class partTimeEmployee extends Employee {
+
+	public partTimeEmployee(String empName, int empID, String empDept) {
+		super(empName, empID, empDept);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	double calSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

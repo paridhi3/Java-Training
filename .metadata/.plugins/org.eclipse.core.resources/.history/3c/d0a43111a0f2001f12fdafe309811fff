@@ -1,0 +1,6 @@
+package com.ems.EMS.service;
+
+@Service
+public class EmployeeService {
+
+}

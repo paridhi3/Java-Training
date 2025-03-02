@@ -1,0 +1,43 @@
+package com.onlinebookshop.shop.service;
+
+import java.util.List;
+
+import com.onlinebookshop.shop.model.Author;
+import com.onlinebookshop.shop.repository.BookRepository;
+
+public class BookService {
+	private BookRepository bookRepo;
+
+	public BookService(BookRepository bookRepo) {
+		super();
+		this.bookRepo = bookRepo;
+	}
+	
+	// add new author
+	public void addAuthor(Author author) {
+		bookRepo.save(author);
+	}
+	
+	// find all authors
+	public List<Author> getAllAuthors() {
+		return bookRepo.findAll();
+	}
+	
+	// find author by id
+	public Author getAuthorById(int id) {
+		return bookRepo.findById(id);
+	}
+	
+	// update author
+	public void updateAuthorDetails(Author author) {
+		bookRepo.update(author);
+	}
+	
+	// delete order
+	public void deleteAuthor(int id) {
+		bookRepo.delete(id);
+	}
+	
+	
+}
+

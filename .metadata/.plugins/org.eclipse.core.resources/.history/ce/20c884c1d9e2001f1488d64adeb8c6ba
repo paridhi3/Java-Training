@@ -1,0 +1,9 @@
+package oops;
+
+public class intern extends Employee {
+
+	public intern(String empName, int empID, String empDept) {
+		super(empName, empID, empDept);
+	}
+
+}

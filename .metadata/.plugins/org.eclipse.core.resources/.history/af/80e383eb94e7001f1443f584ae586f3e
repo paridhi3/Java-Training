@@ -1,0 +1,41 @@
+package test;
+
+import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class CourseManagementSystem {
+    private LinkedList<course> courses;
+
+    public CourseManagementSystem() {
+        this.courses = new LinkedList<>();
+    }
+
+    public void addCourse(course course) {
+        try {
+            if (course.getFee() < 0) {
+                throw new IllegalArgumentException("Fee cannot be negative.");
+            }
+            courses.add(course);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void sortCoursesByFee() {
+        courses.sort(Comparator.comparingDouble(course::getFee));
+    }
+
+   public List<course> filterCoursesByDuration() { 
+       return courses.stream()
+                     .filter(course -> course.getDurationWeeks()>4)
+                     .collect(Collectors.toList());  
+   } 
+
+     // Getter for the list of all Courses 
+     public List<course> getAllCourses(){
+         return new Arraylist<>(courses);  
+     } 
+}
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest" project="Testing" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="Junit.CalculatorTest" time="0.035" displayname="CalculatorTest" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]">
+    <testcase name="testCondition2" classname="Junit.CalculatorTest" time="0.028" displayname="testCondition2()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testCondition2()]"/>
+    <testcase name="testAdd" classname="Junit.CalculatorTest" time="0.002" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testAdd()]"/>
+    <testcase name="testSubtract" classname="Junit.CalculatorTest" time="0.001" displayname="testSubtract()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testSubtract()]"/>
+    <testcase name="testCondition" classname="Junit.CalculatorTest" time="0.001" displayname="testCondition()" uniqueid="[engine:junit-jupiter]/[class:Junit.CalculatorTest]/[method:testCondition()]"/>
+  </testsuite>
+</testrun>

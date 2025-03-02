@@ -1,0 +1,55 @@
+package com.onlinebookshop.shop.repository;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.onlinebookshop.shop.model.Author;
+
+public class AuthorRepository {
+	private final JdbcTemplate jdbcTemplate;
+
+	public AuthorRepository(JdbcTemplate jdbcTemplate) {
+		super();
+		this.jdbcTemplate = jdbcTemplate;
+	} 
+	
+	// RowMapper for author
+	private RowMapper<Author> authorRowMapper = (rs, rowNum) ->
+		new Author(rs.getInt("id"), rs.getString("name"), rs.getString("country"));
+		
+	// CRUD operations
+	
+	// create -> insert query
+	public int save(Author author) {
+		String query = "INSERT INTO authors (name, country) VALUES (?, ?)";
+		return jdbcTemplate.update(query, author.getName(), author.getCountry());
+	}
+	
+	// read (get all authors)
+	public List<Author> findAll() {
+		String query = "SELECT * FROM authors"; // map result set to list of java objects
+		return jdbcTemplate.query(query, authorRowMapper);
+	}
+	
+	// read (author by id)
+	public List<Author> findById() {
+		String query = "SELECT * FROM authors WHERE id = ?"; // map result set to list of java objects
+		return jdbcTemplate.query(query, authorRowMapper);
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

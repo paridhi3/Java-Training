@@ -1,0 +1,54 @@
+package com.onlinebookshop.shop.repository;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.onlinebookshop.shop.model.Author;
+import com.onlinebookshop.shop.model.Book;
+
+public class BookRepository {
+	private final JdbcTemplate jdbcTemplate;
+
+	public BookRepository(JdbcTemplate jdbcTemplate) {
+		super();
+		this.jdbcTemplate = jdbcTemplate;
+	} 
+	
+	// RowMapper for book
+	private RowMapper<Book> bookRowMapper = (rs, rowNum) ->
+		new Book(rs.getInt("id"), rs.getString("title"), rs.getDouble("price"), rs.getInt("author_id"));
+		
+	// CRUD operations
+	
+	// create -> insert query
+	public int save(Book book) {
+		String query = "INSERT INTO books (title, author_id, price) VALUES (?, ?, ?)";
+		return jdbcTemplate.update(query, book.getTitle(), book.getAuthor_id(), book.getPrice());
+	}
+	
+	// read (get all books)
+	public List<Book> findAll() {
+		String query = "SELECT * FROM books"; // map result set to list of java objects
+		return jdbcTemplate.query(query, bookRowMapper);
+	}
+	
+	// read (book by id)
+	public Author findById(int id) {
+		String query = "SELECT * FROM books WHERE id = ?"; // map result set to list of java objects
+		return jdbcTemplate.queryForObject(query, authorRowMapper, id);
+	}
+	
+	// update author (return number of rows affected -> int)
+	public int update(Author author) {
+		String query = "UPDATE authors SET name=?, country=? WHERE id=?";
+		return jdbcTemplate.update(query, author.getName(), author.getCountry(), author.getId());
+	}
+	
+	// delete author (similar to update)
+	public int delete(int id) {
+		String query = "DELETE FROM authors WHERE id=?";
+		return jdbcTemplate.update(query, id);
+	}
+}

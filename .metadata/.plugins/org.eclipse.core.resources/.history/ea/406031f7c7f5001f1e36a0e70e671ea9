@@ -1,0 +1,8 @@
+package com.onlinebookshop.shop.controller;
+
+
+@Controller
+@RequestMapping("/api")
+public class BookController {
+
+}

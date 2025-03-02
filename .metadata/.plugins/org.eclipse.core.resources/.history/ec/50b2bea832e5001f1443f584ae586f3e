@@ -1,0 +1,21 @@
+package multiThreading;
+
+import java.io.FileOutputStream;
+
+public class serialApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		person objP = new person("paridhi", 1);
+		
+		try {
+			// o/p to a file
+			FileOutputStream file = new FileOutputStream("person.ser");
+			ObjectOutputStream out = new ObjectOutputStream(file);
+			
+		} catch(Exception e) {
+			
+		}
+	}
+
+}

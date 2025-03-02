@@ -1,0 +1,31 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+
+public class ShowAvailableMovies {
+	
+	public static void displayAll() {
+		
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		String query = "SELECT"
+				+ "    movies.movie_id,"
+				+ "    movies.title,"
+				+ "    movies.genre,"
+				+ "    movies.duration,"
+				+ "    shows.show_id,"
+				+ "    shows.show_time,"
+				+ "    shows.available_seats"
+				+ "FROM "
+				+ "    movies"
+				+ "INNER JOIN "
+				+ "    shows ON movies.movie_id = shows.movie_id;";
+		
+		
+	}
+	
+}

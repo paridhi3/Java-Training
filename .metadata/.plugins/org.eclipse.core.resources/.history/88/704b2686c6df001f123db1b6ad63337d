@@ -1,0 +1,12 @@
+package oops;
+
+public class SavingsBankAcc extends BankAccountClass {
+	private double interestRate;
+	
+	public SavingsBankAcc() {
+		super();
+	}
+	
+	public SavingsBankAcc(int accountNumber, String accountHolderName, double initialBalance) {
+    }
+}

@@ -1,0 +1,19 @@
+package com.onlinebookshop.shop.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.onlinebookshop.shop.model.Book;
+import com.onlinebookshop.shop.service.BookService;
+
+@Controller
+@RequestMapping("/api")
+public class BookController {
+	
+	//inject service layer object
+	private BookService bookService;
+	
+	public List<Book> fetchBooks() {
+		
+	}
+}

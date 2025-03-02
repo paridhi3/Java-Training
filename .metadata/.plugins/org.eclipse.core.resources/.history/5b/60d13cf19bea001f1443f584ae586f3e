@@ -1,0 +1,68 @@
+package MovieTicketBooking;
+ 
+import java.sql.*;
+import java.util.*;
+ 
+public class Test {
+    public static void main(String[] args) {
+//        Connection conn = null;
+//        CallableStatement cstmt = null;
+//        try {
+//            conn = DatabaseConnection.getConnection();
+//            if (conn == null) {
+//                System.out.println("Database Connection Failed");
+//                return;
+//            }
+// 
+//            cstmt = conn.prepareCall("{CALL GetMovieTitle(?, ?, ?)}");
+// 
+//            System.out.print("Enter your movie Id: ");
+//            Scanner sc = new Scanner(System.in);
+//            int movieId = sc.nextInt();
+//            cstmt.setInt(1, movieId);
+// 
+//            cstmt.registerOutParameter(2, Types.VARCHAR);
+//            cstmt.registerOutParameter(3, Types.VARCHAR);
+//
+//            cstmt.execute();
+// 
+//            String title = cstmt.getString(2);
+//            String genre = cstmt.getString(3);
+//            System.out.println("Movie Title: " + title);
+//            System.out.println("Movie Genre: " + genre);
+//            
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+    	
+    	Connection conn = null;
+        CallableStatement cstmt = null;
+        try {
+            conn = DatabaseConnection.getConnection();
+            if (conn == null) {
+                System.out.println("Database Connection Failed");
+                return;
+            }
+ 
+            cstmt = conn.prepareCall("{CALL GetBookings(?)}");
+ 
+            System.out.print("Enter your username: ");
+            Scanner sc = new Scanner(System.in);
+            String username = sc.next();
+            cstmt.setString(1, username);
+ 
+            cstmt.registerOutParameter(2, Types.VARCHAR);
+            cstmt.registerOutParameter(3, Types.VARCHAR);
+
+            cstmt.execute();
+ 
+            String title = cstmt.getString(2);
+            String genre = cstmt.getString(3);
+            System.out.println("Movie Title: " + title);
+            System.out.println("Movie Genre: " + genre);
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,20 @@
+package oops;
+
+public class fullTimeEmployee extends Employee{
+
+	public fullTimeEmployee(String empName, int empID, String empDept) {
+		super(empName, empID, empDept);
+	}
+	
+	@Override
+	double calSalary() {
+		return 0;
+	}
+ 
+	public static void main(String[] args)
+	{
+		fullTimeEmployee fe =new fullTimeEmployee();
+		fe.displayEmpDetails();
+	}
+
+}

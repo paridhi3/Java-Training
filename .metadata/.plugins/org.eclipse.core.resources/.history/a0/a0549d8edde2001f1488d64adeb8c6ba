@@ -1,0 +1,49 @@
+package oops;
+
+public class fullTimeEmployee extends Employee{
+
+	private double basicSalary;
+	private double bonus;
+	private int leaveDays;
+ 
+	public fullTimeEmployee(String empName, int empId, String empDept, double basicsal, double bonus, int leaveDays) {
+		super(empName, empId, empDept);
+		this.basicSalary=basicsal;
+		this.bonus=bonus;
+		this.leaveDays = leaveDays;
+	}
+ 
+	@Override
+	double calSalary() {
+		return basicSalary+bonus;
+	}
+ 
+	public double getBasicSalary() {
+		return basicSalary;
+	}
+ 
+	public void setBasicSalary(double basicSalary) {
+		this.basicSalary = basicSalary;
+	}
+ 
+	public double getBonus() {
+		return bonus;
+	}
+ 
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	@Override
+	public boolean applyLeave(int days) {
+		if(days<=5) {
+			
+		}
+		else {
+			System.out.println("No leaves left");
+			return false;
+		}
+		
+	}
+
+}

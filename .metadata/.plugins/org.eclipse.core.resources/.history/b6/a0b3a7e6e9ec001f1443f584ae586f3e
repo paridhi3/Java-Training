@@ -1,0 +1,5 @@
+package MovieTicketBooking;
+
+public class AvailableShowsSeatsFilter implements javax.sql.rowset.Predicate {
+
+}

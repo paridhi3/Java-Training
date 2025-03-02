@@ -1,0 +1,14 @@
+package com.ems.EMS.service;
+
+@Service
+public class PayrollService {
+	@Autowired
+	private Payroll payroll;
+	public double calAnnualbonus() {
+		return payroll.getBonuses()*12;
+	}
+	public double calAnnualdeduction() {
+		return payroll.getDeductions()*12;
+	}
+ 
+}

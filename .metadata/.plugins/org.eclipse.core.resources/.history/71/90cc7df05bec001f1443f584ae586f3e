@@ -1,0 +1,9 @@
+package MovieTicketBooking;
+
+public class User {
+	int user_id;
+	String username;
+	String pwd;
+	boolean isAdmin;
+
+}

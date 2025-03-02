@@ -1,0 +1,25 @@
+package MovieTicketBooking;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class DatabseTables {
+	
+	public static void createTables() {
+		Connection conn = DatabaseConnection.getConnection();
+		if(conn == null) {
+			System.out.println("Database connection failed.");
+			return;
+		}
+		
+		try {
+			Statement smt = conn.createStatement();
+		}
+	}
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

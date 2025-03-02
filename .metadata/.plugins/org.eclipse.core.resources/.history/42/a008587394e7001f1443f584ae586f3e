@@ -1,0 +1,16 @@
+package test;
+
+public class NonTechnical Course extends Course{
+    
+    public Nontechnical Course(int courseId,String coursename,String Instructor,int Durationweeks,double Fee){
+        super(courseid,coursename,instructor,durationweeks ,fee);  
+    } 
+
+     @Override 
+     protected double calculate Discount(){
+         if(getfee()>15000){ 
+             return getfee()*0 .95;
+          } 
+          return Getfee();
+      }  
+}

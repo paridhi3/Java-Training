@@ -1,0 +1,145 @@
+package EmpMgmt;
+
+import java.util.Scanner;
+
+import oops.BankAccountClass;
+import oops.DematClass;
+import oops.PremiumBankAcc;
+import oops.SavingsBankAccClass;
+
+
+public class EmpApp {
+	
+	static Employee[] employees;
+	static int totalEmployees = 0;
+	static int maxEmployees = 5;
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		employees = new Employee[5];
+		
+		while(true) {
+			System.out.println("Employee Menu");
+			System.out.println("Press 1: To create employee");
+			System.out.println("Press 2: To display all employees");
+//			System.out.println("Press 3: Generate Payroll");
+//			System.out.println("Press 4: Withdraw money");
+//			System.out.println("Press 5: Transfer money");
+//			System.out.println("Press 6: Buy Stocks");
+//			System.out.println("Press 7: Sell Stocks");
+			System.out.println("Press 8: Exit");
+			
+			int choice = sc.nextInt();
+			
+			switch(choice) {
+			case 1:
+				createEmployee(sc);
+				break;
+			case 2:
+				displayAllEmployees();
+				break;
+//			case 3:
+//				depositMoney(sc);
+//				break;
+//			case 4:
+//				withdrawMoney(sc);
+//				break;
+//			case 5:
+//				transferMoney(sc);
+//				break;
+//			case 6:
+//				buyStocks(sc);
+//				break;
+//			case 7:
+//				sellStocks(sc);
+//				break;
+			case 8:
+				System.out.println("Thank you");
+				sc.close();
+				return;
+			default:
+				System.out.println("Invalid choice");
+			}
+		}
+
+}
+	
+	
+	public static void createEmployee(Scanner sc) {
+		if(totalEmployees >= maxEmployees) {
+			System.out.println("Cannot create more employees");
+			return;
+		}
+		
+		System.out.println("Enter Employee ID: ");
+		int empID = sc.nextInt();
+		
+		System.out.println("Enter Employee Name: ");
+		String empName = sc.next();
+		
+		System.out.println("Enter Employee Dept: ");
+		String dept = sc.next();
+		
+		System.out.println("Enter Employee base salary: ");
+		double baseSalary = sc.nextDouble();
+		
+		System.out.println("Enter Employee Leave balance: ");
+		int leaveBalance = sc.nextInt();
+		
+		System.out.println("Enter Employee Type: ");		
+		System.out.println("Press 1: FTE");
+		System.out.println("Press 2: PTE");
+		System.out.println("Press 3: Intern");
+		System.out.println("Press 4: Manager");
+		System.out.println("Press 5: Payroll Manager");
+		int type = sc.nextInt();
+		
+		switch(type) {
+		case 1:
+			System.out.println("Enter bonus for FTE: ");
+			double bonus = sc.nextDouble();
+			employees[totalEmployees] = new FTE(empName, empID, dept, baseSalary, leaveBalance, bonus);
+			break;
+		case 2:
+			System.out.println("Enter number of hours: ");
+			int noOfHours = sc.nextInt();
+			System.out.println("Enter hourly rate: ");
+			double hourlyRate = sc.nextDouble();
+			employees[totalEmployees] = new PTE(empName, empID, dept, baseSalary, leaveBalance, noOfHours, hourlyRate);
+			break;
+		case 3:
+			System.out.println("Enter number of hours: ");
+			int noOfHours2 = sc.nextInt();
+			employees[totalEmployees] = new intern(empName, empID, dept, baseSalary, leaveBalance, noOfHours2);
+			break;
+		case 4:
+			System.out.println("Enter bonus for Manager: ");
+			double bonus2 = sc.nextDouble();
+			employees[totalEmployees] = new Manager(empName, empID, dept, baseSalary, leaveBalance, bonus2);
+			break;
+//		case 5:
+//			employees[totalEmployees] = new PayrollManager();
+//			break;
+		default:
+			System.out.println("Invalid choice");
+		}
+		
+		System.out.println("Employee created successfully!");
+		totalEmployees++;
+	}
+	
+	public static void displayAllEmployees() {
+		if(totalEmployees==0) {
+			System.out.println("No employees to display");
+			return;
+		}
+		System.out.println("Employee details:");
+		for(int i=0; i<totalEmployees; i++) {
+			employees[i].displayInfo();
+			System.out.println("-------------------------------------");
+		}
+	}
+	
+	
+}
+	

@@ -1,0 +1,6 @@
+package EmpMgmt;
+
+public interface Taxable {
+	double taxRate = 0.20;
+	double calSalary(double salary);
+}

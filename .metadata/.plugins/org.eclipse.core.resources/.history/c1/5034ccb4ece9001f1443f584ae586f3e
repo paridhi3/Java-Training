@@ -1,0 +1,14 @@
+package MovieTicketBooking;
+
+import java.util.Scanner;
+
+public class TicketBooking {
+	
+	public static void bookTicket() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Select the movie and show from below:");
+		ShowAvailableMovies.displayAll();
+	}
+	
+	
+}

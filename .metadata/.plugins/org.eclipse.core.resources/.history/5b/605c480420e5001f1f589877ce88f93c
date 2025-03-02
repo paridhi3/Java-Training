@@ -1,0 +1,10 @@
+package multiThreading;
+
+public class testThread2 extends Thread{
+	
+	public void run() {
+		Thread.sleep(3000);
+		System.out.println("Thread is running (thread class): "+Thread.currentThread().getName());		
+	}
+	
+}

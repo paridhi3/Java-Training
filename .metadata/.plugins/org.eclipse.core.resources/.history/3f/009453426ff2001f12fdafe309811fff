@@ -1,0 +1,10 @@
+package com.ems.EMS.model;
+
+import java.util.Map;
+
+public class HR {
+	
+	private Map<Integer, Employee> empRecords;
+	
+	
+}
