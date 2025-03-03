@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Online Book Shop</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<script type="module" src="app.js"></script>
+
+<!--  
+<Script>
+	function example(){
+		let x=10;
+		if(true){
+			let x = 20;
+			console.log(x);
+		}
+		console.log(x);
+	}
+	example();
+	
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// Loose Equal (==)
+	console.log("5" == 5); // true
+	console.log(5 == 5);   // true
+	console.log("5" == 6); // false
+	// Strict Equal (===)
+	console.log("5" === 5);   // false (different types)
+	console.log(5 === 5);     // true (same type and value)
+	console.log("5" === "5"); // true (same type and value)
+	// Not Equal (!=)
+	console.log("5" != 5); // false (values are the same)
+	console.log(5 != 6);   // true  (values are different)
+	// Strict Not Equal (!==)
+	console.log("5" !== 5);   // true (different types)
+	console.log(5 !== 5);     // false (same type and value)
+	console.log("5" !== "5"); // false (same type and value)
+	// Logical AND (&&)
+	console.log(5 > 3 && 5 > 2); // true (both conditions are true)
+	console.log(5 > 3 && 5 < 2); // false (second condition is false)
+	// Logical OR (||)
+	console.log(5 > 3 || 5 < 2); // true (first condition is true)
+	console.log(5 < 3 || 5 < 2); // false (both conditions are false)
+	// Logical NOT (!)
+	console.log(!(5 > 3)); // false (because 5 > 3 is true, and NOT true is false)
+	console.log(!(5 < 3)); // true  (because 5 < 3 is false, and NOT false is true)
+	
+	let name = "Tanuj";
+    console.log("Hello, " + name + " Welcome");
+ 
+    name = "Tanuj";
+    console.log(`Hello, ${name} Welcome`);
+ 
+    let text1 = "This is line1. \n" + "This is line2.";
+    console.log(text1);
+ 
+    text1 = `This is line1.
+			This is line2.`;
+    console.log(text1);
+ 
+    let product = "Laptop";
+    let price = 55000;
+    console.log(`The price of ${product} is ${price}`);
+
+//------------------------------------------------------------------------------------------------------------------ 
+    
+ 	// String Methods
+    let text = "  JavaScript is Awesome!  ";
+    console.log("Original Text:", text);
+     
+    console.log("Length:", text.length);
+    console.log("To Upper Case:", text.toUpperCase());
+    console.log("To Lower Case:", text.toLowerCase());
+    console.log("Trimmed Text:", text.trim());
+    console.log("Slice (2, 10):", text.slice(2, 10));
+    console.log("Replace 'Java' with 'Type':", text.replace("Java", "Type"));
+     
+    let text2 = "value1, value2, value3";
+    console.log("Split by comma:", text2.split(","));
+    
+//------------------------------------------------------------------------------------------------------------------      
+   
+	// Array Methods
+    let numbers = [10, 20, 30, 40, 50];
+    let gadgets = ["Laptop", "Smartphone", "TV"];
+     
+    console.log("\nOriginal Arrays:");
+    console.log("Numbers:", numbers);
+    console.log("Gadgets:", gadgets);
+     
+    console.log("\nAccess Element (index 2):", gadgets[2]);
+     
+    // Modifying arrays
+    gadgets.push("Earphone");
+    console.log("After Push:", gadgets);
+     
+    gadgets.pop();
+    console.log("After Pop:", gadgets);
+     
+    gadgets.shift();
+    console.log("After Shift:", gadgets);
+     
+    gadgets.unshift("Mic");
+    console.log("After Unshift:", gadgets);
+     
+    console.log("Index of 'Smartphone':", gadgets.indexOf("Smartphone"));
+    console.log("Includes 'Earphone':", gadgets.includes("Earphone"));
+     
+    console.log("Slice (1, 3):", gadgets.slice(1, 3));
+     
+    gadgets.splice(1, 2);
+    console.log("After Splice (1, 2):", gadgets);
+     
+    console.log("Join with '-':", gadgets.join("-"));
+     
+    gadgets.reverse();
+    console.log("After Reverse:", gadgets);
+     
+    gadgets.sort();
+    console.log("After Sort:", gadgets);
+     
+    // Looping through arrays
+    console.log("\nUsing forEach:");
+    gadgets.forEach((gadget) => console.log(gadget));
+
+//------------------------------------------------------------------------------------------------------------------     
+    
+    // Using map()
+    let squaredNumbers = numbers.map(num => num * num);
+    console.log("Squared Numbers:", squaredNumbers);
+    
+//------------------------------------------------------------------------------------------------------------------    
+    
+    // objects can have functions as properties
+    let person = {
+      name: "Tanuj",
+      age: 25,
+      city: "HD",
+      hasvotercard: true
+    };
+    delete person.hasvotercard;
+    console.log(person); // { name: 'Tanuj', age: 25, city: 'HD' }
+    
+    // Object with a function as a property
+    let user = {
+      name: "Tanuj",
+      greet() {
+    console.log(`Hello, my name is ${this.name}`);
+      }
+    };
+    user.greet(); // Hello, my name is Tanuj
+    
+    // Object Destructuring
+    let { name1, age, city } = person;
+    console.log(name1); // Tanuj
+    console.log(age);  // 25
+    console.log(city); // HD
+    
+    // Object Spread Operator - Copying an object
+    let obj1 = { a: 12, b: 15 };
+    let obj2 = { ...obj1, c: 20 };
+    console.log(obj2); // { a: 12, b: 15, c: 20 }
+    
+    // Object Spread Operator - Merging objects
+    let userInfo = { name1: "Tanuj", age: 25 };
+    let userLocation = { city: "HD", country: "India" };
+    let userAllData = { ...userInfo, ...userLocation };
+    console.log(userAllData);
+    
+      for (let key in person) {
+            console.log(key + ": " + person[key]);
+        }
+ 
+        for (let gadget of gadgets) {
+            console.log(gadget);
+        }
+ 
+        for (let number of numbers) {
+            console.log(number);
+        }
+
+//------------------------------------------------------------------------------------------------------------------ 
+
+        const add = function(a, b) {
+            return a + b;
+        };
+        console.log(add(4, 5));
+ 
+        const multiply = (x, y) => x * y;
+        console.log(multiply(12, 23));
+ 
+        const cube = x => x * x * x;
+        console.log(cube(5));
+ 
+        const greet = (name) => {
+            let message = `Hello, ${name}, Welcome`;
+            return message;
+        };
+        console.log(greet("Tanuj"));
+ 
+        // Higher Order Function (HOF)
+        const hofExample = (fn, x, y) => {
+            return fn(x, y);
+        };
+        console.log(hofExample(add, 4, 5));
+ 
+        // Object with function as property
+        let user2 = {
+            name: "Tanuj",
+            greet: function() {
+                console.log(`Hello, my name is ${this.name}`);
+            }
+        }
+        
+//------------------------------------------------------------------------------------------------------------------     
+     	
+     	// Hotel room data
+        const hotelRooms = [
+            { type: "Standard", price: 5000, available: true },
+            { type: "Deluxe", price: 8000, available: true },
+            { type: "Suite", price: 12000, available: false },
+            { type: "Penthouse", price: 15000, available: true }
+        ];
+
+        function findAvailableRooms(rooms, minPrice, maxPrice) {
+            const availableRooms = [];
+
+            rooms.forEach(room => {
+                if (room.available && room.price >= minPrice && room.price <= maxPrice) {
+                    availableRooms.push({ type: room.type, price: room.price });
+                }
+            });
+
+            return availableRooms;
+        }
+
+        const availableRooms = findAvailableRooms(hotelRooms, 5000, 10000);
+
+        console.log(availableRooms);
+        
+//------------------------------------------------------------------------------------------------------------------ 
+        
+     	// Shopping cart
+        const cartItems = [
+            { name: "Laptop", price: 40000, quantity: 1 },
+            { name: "Smartphone", price: 20000, quantity: 2 },
+            { name: "Headphones", price: 1500, quantity: 3 },
+            { name: "Book", price: 500, quantity: 4 }
+        ];
+
+        function generateReceipt(cart) {
+            let receipt = "Receipt:\n\n";
+            let totalAmount = 0;
+
+            cart.forEach(item => {
+                const name = item.name;
+                const price = item.price;
+                const quantity = item.quantity;
+                const itemTotal = price * quantity;
+                receipt += `Item: ${name}\nPrice: ${price}\nQuantity: ${quantity}\nTotal: ${itemTotal}\n\n`;
+                totalAmount += itemTotal;
+            });
+
+            receipt += `Grand Total: ${totalAmount}`;
+
+            return receipt;
+        }
+
+        console.log(generateReceipt(cartItems));
+        
+//------------------------------------------------------------------------------------------------------------------ 
+     	
+     	// Student data
+        const studentData = {
+            name: "Tanuj",
+            marks: { Maths: 95, Science: 97, Computers: 98 }
+        };
+
+        const generateReportCard = (studentData) => {
+            const marks = studentData.marks;
+            const totalMarks = marks.Maths + marks.Science + marks.Computers; // Corrected property names
+            const subjectsCount = Object.keys(marks).length;
+            const averageMarks = totalMarks / subjectsCount;
+            const percentage = (totalMarks / (subjectsCount * 100)) * 100;
+
+            return {totalMarks, averageMarks, percentage};
+        };
+
+        const reportCard = generateReportCard(studentData);
+        console.log(`Total Marks: ${reportCard.totalMarks}`);
+        console.log(`Average Marks: ${reportCard.averageMarks}`);
+        console.log(`Percentage: ${reportCard.percentage}%`);
+
+//------------------------------------------------------------------------------------------------------------------ 
+
+	document.addEventListener("DOMContentLoaded", () => {
+	    
+	    // 1. Select elements using different methods
+	    const heading = document.getElementById("heading");
+	    console.log(heading);
+	    const messages = document.getElementsByClassName("message");
+	    console.log(messages);
+	    const h1Headings = document.getElementsByTagName("h1");
+	    console.log(h1Headings);
+	    
+	    // Query Selectors
+	    const headingQuery = document.querySelector("#heading");
+	    console.log(headingQuery);
+	    const messageQuery = document.querySelector(".message");
+	    console.log(messageQuery);
+	    
+	    // 2. Modifying DOM Elements
+	    if (heading) {
+	        console.log("Original Heading:", heading.textContent);
+	        heading.textContent = "-- New Content --";
+	        console.log(heading.textContent);
+	    }
+	    
+	    if (messageQuery) {
+	        messageQuery.innerHTML = "<strong>Updated Message</strong>";
+	    }
+	    
+	    // Disable a button
+	    const button = document.querySelector("#btn");
+	    if (button) {
+	        button.setAttribute("disabled", "true"); // Disable the button
+	    }
+	    
+	    // 3. Event Handling
+	    if (button) {
+	        button.removeAttribute("disabled"); // Enable button again
+	        button.addEventListener("click", () => {
+	            heading.textContent = "Heading Changed!";
+	            alert("Button Clicked!");
+	        });
+	    
+	        // Change background color on mouseover
+	        button.addEventListener("mouseover", () => {
+	            button.style.backgroundColor = "lightblue";
+	        });
+	    
+	        button.addEventListener("mouseout", () => {
+	            button.style.backgroundColor = "";
+	        });
+	    }
+	
+	    // Keypress event listener
+	    document.addEventListener("keypress", (event) => {
+	        console.log("Key Pressed:", event.key);
+	    });
+	});
+	
+//------------------------------------------------------------------------------------------------------------------ 	
+	
+	// callback
+	function fetchData(callback) {
+		console.log("Testing callback: Fetching data...");
+		setTimeout(() => {
+			let data = {name: "Tanuj", age:25};
+			callback(data);
+		}, 1000);
+	}
+	
+	function processData(data) {
+		console.log("Testing callback: Processing data...", data);
+	}
+	
+	fetchData(processData);
+	
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// promises
+	function fetchDataPromise() {
+	    console.log("Testing promise: Fetching data...");
+	    return new Promise((resolve, reject) => {
+	        setTimeout(() => {
+	            let success = true;
+	            if (success) {
+	                resolve({ name: "Tanuj", age: 25 }); // promise fulfilled
+	            } else {
+	                reject("Testing promise: Error: Failed to fetch data");
+	            }
+	        }, 1000);
+	    });
+	}
+
+	fetchDataPromise()
+	    .then((data) => {
+	        console.log("Testing promise: Processing data...", data);
+	    })
+	    .catch((error) => {
+	        console.log(error);
+	    });
+	
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// chaining
+	function fetchDataChaining() {
+	    console.log("Testing chaining: Fetching data...");
+	    return new Promise((resolve, reject) => {
+	        setTimeout(() => {
+	            let success = true;
+	            if (success) {
+	                resolve({ name: "Tanuj", age: 25 }); // promise fulfilled
+	            } else {
+	                reject("Testing chaining: Error: Failed to fetch data");
+	            }
+	        }, 1000);
+	    });
+	}
+
+	fetchDataChaining()
+	    .then((data) => {
+	        console.log("Testing chaining: Processing data...", data);
+	        return{...data, city:"London"};
+	    })
+	    .then((updatedData) => {
+	    	console.log("Testing chaining: Processing updatedData...", updatedData);
+	    })
+	    .catch((error) => {
+	        console.log(error);
+	    });
+
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// async await
+	function fetchDataAsync() {
+	   console.log("Testing async: Fetching data...");
+	   return new Promise((resolve, reject) => {
+	       setTimeout(() => {
+	           let success = true;
+	           if (success) {
+	               resolve({ name: "Tanuj", age: 25 }); // promise fulfilled
+	           } else {
+	               reject("Testing async: Error: Failed to fetch data");
+	           }
+	       }, 1000);
+	   });
+	}
+	
+	async function getDataAsync() {    
+	    try {
+	        let data = await fetchDataAsync();
+	        console.log("Testing async: Processing data...", data);
+	        
+	        let updatedData = { ...data, city: "Noida" };
+	        console.log("Testing async: Processing updated data...", updatedData);
+	    } catch (error) {
+	        console.log("Testing async: Error: ", error);
+	    }
+	}
+	
+	getDataAsync();
+	
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// fetch api
+	function fetchUserData1() {
+		console.log("Testing fetch api: Fetching users data...");
+		fetch("https://jsonplaceholder.typicode.com/users")
+		.then((response) => {
+			if(!response.ok) {
+				throw new Error('Http error : status : $(response.status)');
+			}
+			return response.json();
+		})
+		.then((data) => {
+			console.log("Testing fetch api: Users data: ", data);
+		})
+		.catch((error) => {
+			console.log("Testing fetch api: Error: ", error);
+		})
+	}
+	
+	fetchUserData1();
+
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// fetch api using async/await
+	async function fetchUserData2() {
+	    console.log("Testing fetch api async/await: Fetching users data...");
+
+	    try {
+	        let response = await fetch("https://jsonplaceholder.typicode.com/users");
+	        if (!response.ok) {
+	            throw new Error('Http error: status ${response.status}');
+	        }
+	        
+	        let data = await response.json();
+	        console.log("Testing fetch api async/await: Users data: ", data);
+	    } catch (error) {
+	        console.log("Testing fetch api async/await: Error: ", error);
+	    }
+	}
+
+	fetchUserData2();
+	
+//------------------------------------------------------------------------------------------------------------------ 
+	
+	// fetch api with parameters
+	
+	async function fetchUserData3(id) {
+		console.log("Testing fetch api with parameters: Fetching data...");
+	    try {
+	        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+	        if (!response.ok) {
+	            throw new Error('HTTP error: status : ${response.status}');
+	        }
+	        const data = await response.json();
+	        console.log("Testing fetch api with parameters: User Data: ", data[id-1]);
+	    } catch (error) {
+	        console.log("Error: ", error);
+	    }
+	}
+	
+	fetchUserData3(3);
+	
+//------------------------------------------------------------------------------------------------------------------
+
+	// fetch api: fetch multiple users
+	async function fetchMultipleUsers(userIds) {
+	    console.log("Testing fetch api for multiple users: Fetching data... ");
+	    
+	    const userPromises = userIds.map(userId => {
+	        const url = `https://jsonplaceholder.typicode.com/users/${userId}`;
+	        return fetch(url)
+	            .then(response => {
+	                if (!response.ok) {
+	                    throw new Error(`Http error: status ${response.status}`);
+	                }
+	                return response.json();
+	            });
+	    });
+	
+	    try {
+	        const usersData = await Promise.all(userPromises);
+	        console.log("Testing fetch api for multiple users: Users data:", usersData);
+	    } catch (error) {
+	        console.log("Testing fetch api for multiple users: Error fetching multiple users:", error);
+	    }
+	}
+
+	fetchMultipleUsers([2, 6, 9]);
+	
+//------------------------------------------------------------------------------------------------------------------
+
+	// post request
+	
+	function fetchUserData4() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Http error: status : ${response.status}`);
+            }
+            return response.json();
+        })
+        .then((data) => {
+            console.log("post User Data: ", data);
+        })
+        .catch((error) => {
+            console.log("Error: ", error);
+        });
+	}
+	 
+	 
+	//Function to create a new user (POST request)
+	function createUser(newUser) {
+	    fetch("https://jsonplaceholder.typicode.com/users", { 
+	        method: "POST",
+	        headers: {
+	            "Content-Type": "application/json"
+	        },
+	        body: JSON.stringify(newUser)
+	    })
+	    .then(response => response.json())
+	    .then(data => {
+	        console.log("User created successfully:", data);
+	    })
+	    .catch(error => {
+	        console.error("Error creating user:", error);
+	    });
+	}
+	 
+	createUser({ name: "abc", email: "gaihsd@gmail.com" });
+	 
+	fetchUserData4();
+	
+//------------------------------------------------------------------------------------------------------------------
+
+	// delete user
+	function deleteUser(userId) {
+	    const confirmation = window.confirm(`Are you sure you want to delete the user with ID: ${userId}?`);
+	    if (!confirmation) {
+	        console.log('DELETE: Deletion cancelled.');
+	        return;
+	    }
+	 
+	    fetch("https://jsonplaceholder.typicode.com/users/${userId}", {
+	        method: 'DELETE',
+	        headers: {
+	            'Content-Type': 'application/json',
+	        }
+	    })
+	    .then(response => {
+	        if (response.ok) {
+	            console.log(`DELETE: User with ID: ${userId} deleted.`);
+	        } else {
+	            console.error('Error deleting user:', response.statusText);
+	        }
+	    })
+	    .catch(error => {
+	        console.error('DELETE: Error:', error);
+	    });
+	}
+	
+	deleteUser(2);
+	
+//------------------------------------------------------------------------------------------------------------------
+
+	//put method
+	async function updateUser(userId, userData) {
+	    try {
+	        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`, {
+	            method: 'PUT',
+	            headers: {
+	                'Content-Type': 'application/json',
+	            },
+	            body: JSON.stringify(userData),
+	        });
+ 
+	        if (!response.ok) {
+	            throw new Error('Error updating user: ' + response.statusText);
+	        }
+ 
+	        const data = await response.json();
+	        console.log(`PUT: User with ID: ${userId} updated.`, data);
+	    } catch (error) {
+	        console.error('Error:', error);
+	    }
+	}
+ 
+	const updatedUserData = {
+		name: "Jane Smith",
+		email: "jane.smith@example.com",
+		address: {
+		    street: "456 Elm St",
+		    city: "Townsville",
+		    zipcode: "67890"
+		},
+		phone: "747802388",
+		website: "janesmith.com"
+	};
+ 
+	// patch method
+	updateUser(1, updatedUserData);
+	async function updateUserSpecific(userId, specificFields) {
+	    try {
+	        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`, {
+	            method: 'PATCH',
+	            headers: {
+	                'Content-Type': 'application/json',
+	            },
+	            body: JSON.stringify(specificFields),
+	        });
+ 
+	        if (!response.ok) {
+	            throw new Error('Error updating user: ' + response.statusText);
+	        }
+ 
+	        const data = await response.json();
+	        console.log(`PATCH: User with ID: ${userId} updated with specific fields.`, data);
+	    } catch (error) {
+	        console.error('Error:', error);
+	    }
+	}
+ 
+	const updateFields = {
+	    email: "new@example.com",
+	    phone: "12345"
+	};
+ 
+	updateUserSpecific(1, updateFields);
+
+//------------------------------------------------------------------------------------------------------------------
+
+
+</Script>
+-->
+<body>
+
+	<h1 id='heading'> Welcome to JavaScript</h1>
+	<p class="message"> Welcome to JavaScript </p>
+	<button id='btn'>Click Me</button>
+	<hr>
+<!-- ----------------------------------------------------------------------------------------------------- -->
+	<h1>Welcome to Online Book Shop</h1>
+    
+    <h2>Table Structure:</h2>
+    <table>
+        <tr>
+            <th>BookID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>10.99</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>7.99</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>8.99</td>
+        </tr>
+    </table>
+    
+    <div class="form-container">
+		<form class="registration-form">
+			<h2>Registration</h2>
+			<p>Welcome to Online Book Shop</p>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Register</button>
+		</form>
+	</div>
+
+
+</body>
+</html>
